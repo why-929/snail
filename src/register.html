@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>注册</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    #main {
+        width: 1000px;
+        margin: 0 auto;
+        /* background: lightcyan; */
+    }
+    .logo{
+        margin: 24px 0 99px 0;
+        height: 51px;
+        /* background: lightcoral; */
+    }
+    .logo a {
+        display: inline-block;
+        float: left;
+        text-decoration: none;
+    }
+    .logo img {
+        display: block;
+    }
+    .logo span {
+        display: inline-block;
+        height: 51px;
+        color: #231815;
+        font-size: 20px;
+        line-height: 70px;
+        padding-left: 20px;
+    }
+    #menu{
+        width: 1000px;
+        /* background: lightgreen; */
+    }
+    #menu h3{
+        font-size: 24px;
+        font-weight: bold;
+        color: #222222;
+        text-align: center;
+        line-height: 1;
+        margin-bottom: 68px;
+    }
+    #menu .loginBox{
+        height: 25px;
+        width: 300px;
+        /* background: lightseagreen; */
+        margin: 0 0 0 348px;
+        position: relative;
+    }
+    #menu .loginBox span{
+        font-size: 17px;
+        color: #666666;
+    }
+    #menu .loginBox p{
+        position: absolute;
+        right: 0;
+        top: 0;
+        font-size: 14px;
+        color: #999999;
+    }
+    #menu a{
+        color: #fd8900;
+        text-decoration: none;
+    }
+    #registerBox {
+        margin-left: 250px;
+    }
+    #registerBox label{
+        width: 7em;
+        font-size: 14px;
+        text-align: right;
+        line-height: 46px;
+        color: #333333;
+    }
+    #registerBox input{
+        width: 300px;
+        height: 46px;
+    }
+    .row{
+        padding: 10px 0;
+    }
+
+</style>
+<body>
+    <div id="main">
+        <!-- logo部分 -->
+        <div class="logo">
+            <a href="http://www.snail.com/" target="_blank"><img src="http://mall.snail.com/passport/register/images/logo.png">
+            </a>
+            <span>欢迎注册</span>
+        </div>
+        <!-- 表单上的文字部分 -->
+        <div id="menu">
+            <h3>蜗牛通行证，适用于蜗牛旗下所有游戏！</h3>
+            <div class="loginBox">
+                <span>蜗牛通行证注册</span>
+                <p>已注册 , <a href="">登录</a></p>
+            </div>
+        </div>
+        <!-- 表单部分 -->
+        <form action="" id="registerBox">
+            <div class="row"><label for="">创建账号：</label><input type="text" placeholder="6-25位字母数字或下划线组成"></div>
+            <div class="row"><label for="">设置密码：</label><input type="password" placeholder="6-20个字符组成"></div>
+            <div class="row"><label for="">确认密码：</label><input type="password" placeholder="确认密码"></div>
+            <div class="row"><label for="">手机号码：</label><input type="text" placeholder="可享受官方增值服务"></div>
+        </form>
+
+    </div>
+
+</body>
+<script type="text/javascript">
+
+</script>
+</html>
