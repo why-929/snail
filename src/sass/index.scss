@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+    list-style: none;
 }
 $width:1200px;
 $fontSize:14px;
@@ -12,6 +13,39 @@ $fontSize:14px;
     display: block;
     float: left;
     text-decoration: none;
+}
+.footer-p{
+    font-size: 18px;
+    color: #333;
+    padding-left: 52px;
+    height: 102px;
+    line-height: 102px;
+    position: absolute;
+    top: 0;
+}
+.footer-i{
+    position: absolute;
+    left: 0;
+    top: 30px;
+    width: 42px;
+    height: 42px;
+    background: url(../img/nav-icon.png) 0 0 no-repeat;
+}
+.prize-i{
+    width: 90px;
+    height: 90px;
+    display: block;
+    margin: 0 auto;
+    background: url(../img/nav-icon.png) 0 0 no-repeat;
+    margin-bottom: 20px;
+}
+.prize-item{
+    position: absolute;
+    top: 30px;
+    text-align: center;
+}
+@mixin borderTop($h,$style,$color){
+    border-top: $h $style $color;
 }
 /* header部分 */
 #header{
@@ -156,6 +190,55 @@ $fontSize:14px;
         height: 430px;
         background: #323436;
         float: left;
+        li{
+            margin-top: 1px;
+            height: 45px;
+            width: 230px;
+            line-height: 45px;
+            padding: 0 40px 0 55px;
+            position: relative;
+            i{
+                width: 19px;
+                height: 16px;
+                // background: lightsalmon;
+                position: absolute;
+                left: 30px;
+                top: 18px;
+            }
+            .gnsjk{
+                background: url(../img/nav-icon.png) 0 0 no-repeat;
+            }
+            .mklh{
+                background: url(../img/nav-icon.png) 0 0 no-repeat;
+            }
+            .gjsjk{
+                background: url(../img/nav-icon.png) 0 -17px no-repeat;
+            }
+            .znyj{
+                background: url(../img/nav-icon.png) 0 -33px no-repeat;
+            }
+            .yxdj{
+                background: url(../img/nav-icon.png) 0 -67px no-repeat;
+            }
+            .zb{
+                background: url(../img/nav-icon.png) 0 -84px no-repeat;
+            }
+            .hfcz{
+                background: url(../img/nav-icon.png) 0 -101px no-repeat;
+            }
+            .ywcx{
+                background: url(../img/nav-icon.png) 0 -118px no-repeat;
+            }
+            .ywbl{
+                background: url(../img/nav-icon.png) 0 -135px no-repeat;
+            }
+            a{
+                color: #fff;
+                display: inline-block;
+                width: 135px;
+                font-size: 16px;
+            }
+        }
     }
     .banner{
         height: 430px;
@@ -166,6 +249,455 @@ $fontSize:14px;
             height: 430px;
             width: 1200 - 230px;
             float: left;
+        }
+    }
+}
+/*人气单品部分*/
+#module-rqdp{
+    height: 234px;
+    width: $width;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-top: 20px;
+    position: relative;
+    background: lightsteelblue;
+    .module-rqdp-product{
+        width: 260px;
+        float: left;
+        // font-size: 16px;
+        // text-align: center;
+        display: block;
+    }
+    .module-rqdp-right{
+        position: absolute;
+        top: 0;
+        right: 0;
+        span{
+            color: #fff;
+            font-size: 26px;
+            position: absolute;
+            line-height: 1.4;
+            left: 30px;
+            top: 20px;
+        }
+    }
+}
+
+/*游戏道具部分*/
+#module-yxdj{
+    width: $width;
+    margin: 30px auto 0;
+    background: lightcoral;
+    .module-yxdj-title {
+        margin-bottom: 20px;
+        h1{
+            color: #303030;
+            font-size: 20px;
+            font-weight: normal; 
+        }
+    }
+    .module-yxdj-selectBar{
+        border: 1px solid #e0e0e0;
+        height: 58px;
+        width: $width;
+        background: lightgreen;
+        position: relative;
+        .module-yxdj-selectBar-wrap{
+            width: 1040px;
+            height: 61px;
+            overflow: hidden;
+            position: relative;
+        }
+    } 
+    .module-yxdj-products{
+        margin-top: 16px;
+        position: relative;
+        overflow: hidden;
+        .no-border{
+            width: 227px;
+            height: 360px;
+            float: left;
+            margin-right: 16px;
+        }
+        .module-yxdj-product{
+            width: 225px;
+            height: 358px;
+            float: left;
+            border: 1px solid #fff;
+            margin-right: 16px;
+            // background: lightpink;
+        }
+        .module-yxdj-productRight{
+            margin-right: 0;
+            height: 222px;
+            float: right;
+            // background: blueviolet;
+        }
+        .more{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 226px;
+            height: 118px;
+            border: 1px solid #fff;
+            // background: brown;
+        }
+    } 
+}
+/* 蜗牛手机卡部分 */
+#module-SIMcard{
+    width: $width;
+    margin: 30px auto 0;
+    padding-bottom: 40px;
+    background: gold;
+    .module-SIMcard-title{
+        margin-bottom: 20px;
+        h1{
+            color: #303030;
+            font-size: 20px;
+            font-weight: normal; 
+            // float: left;
+        }
+        .more{
+            float: right;
+            font-size: 14px;
+            color: #999;
+            padding-right: 29px;
+            position: relative;
+            line-height: 30px;
+            span{
+                background-image: url(../img/sprite.png);
+                background-position: 0 0;
+                width: 19px;
+                height: 11px;
+                position: absolute;
+                top: 10px;
+                right: 0;
+            }
+        }
+    }
+    .module-SIMcard-products{
+        margin-top: 16px;
+        position: relative;
+        overflow: hidden;
+        .module-SIMcard-product{
+            float: left;
+            margin-right: 16px;
+            width: 225px;
+            height: 358px;
+            border: 1px solid #fff;
+        }
+        .no-border{
+            float: left;
+            margin-right: 16px;
+            width: 227px;
+            height: 360px;
+        }
+        .module-SIMcard-productRight{
+            float: right;
+            margin-right: 0;
+        }
+    }
+}
+/* 蜗牛国际手机卡部分 */
+#module-INTcard{
+    width: $width;
+    margin: 30px auto 0;
+    padding-bottom: 40px;
+    background: gold;
+    .module-INTcard-title{
+        margin-bottom: 20px;
+        h1{
+            color: #303030;
+            font-size: 20px;
+            font-weight: normal; 
+            // float: left;
+        }
+        .more{
+            float: right;
+            font-size: 14px;
+            color: #999;
+            padding-right: 29px;
+            position: relative;
+            line-height: 30px;
+            span{
+                background-image: url(../img/sprite.png);
+                background-position: 0 0;
+                width: 19px;
+                height: 11px;
+                position: absolute;
+                top: 10px;
+                right: 0;
+            }
+        }
+    }
+    .module-INTcard-products{
+        margin-top: 16px;
+        position: relative;
+        overflow: hidden;
+        .module-INTcard-product{
+            float: left;
+            margin-right: 16px;
+            width: 225px;
+            height: 358px;
+            border: 1px solid #fff;
+        }
+        .no-border{
+            float: left;
+            margin-right: 16px;
+            width: 227px;
+            height: 360px;
+        }
+        .module-INTcard-productRight{
+            float: right;
+            margin-right: 0;
+        }
+    }
+}
+/* 应用部分 */
+#module-use{
+    width: $width;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    height: 500px;
+    background: lightblue;
+    .module-use-title{
+        margin-bottom: 20px;
+        h1{
+            font-size: 20px;
+            color: #303030;
+            font-weight: normal;
+        }
+    }
+    .module-use-products{
+        margin-top: 16px;
+        position: relative;
+        .module-use-product{
+            width: 280px;
+            height: 420px;
+            float: left;
+            margin-right: 26px;
+            background: #fff;
+            text-align: center;
+        }
+        .module-use-productRight{
+            width: 280px;
+            height: 420px;
+            float: right;
+            background: #fff;
+            text-align: center;
+        }
+        .use-goods{
+            @include borderTop(1px,solid, #daae63)
+        }
+        .use-game{
+            @include borderTop(1px,solid, #8fb578)
+        }
+        .use-VR{
+            @include borderTop(1px,solid, #aa5251)
+        }
+        .use-community{
+            @include borderTop(1px,solid, #4e8bba)
+        }
+    }
+}
+/* 底部 */
+#footer{
+    background-color: #fff;
+    overflow: hidden;
+    border-top: 1px solid #ebebeb;
+    .footerMain{
+        width: 1200px;
+        margin: 0 auto;
+        position: relative;
+        overflow: hidden;
+        /* 保证 */
+        .footer-promise{
+            height: 102px;
+            background-color: #fff;
+            position: relative;
+            border-bottom: 1px solid #dedede;
+            .footer-p1{
+                @extend .footer-p;
+                left: 20px;
+                i{
+                    @extend .footer-i;background-position: 0 -360px;
+                }
+            }
+            .footer-p2{
+                @extend .footer-p;
+                left: 380px;
+                i{
+                    @extend .footer-i;background-position: -43px -360px;
+                }
+            }
+            .footer-p3{
+                @extend .footer-p;
+                left: 693px;
+                i{
+                    @extend .footer-i;background-position: -86px -360px;
+                }
+            }
+            .footer-p4{
+                @extend .footer-p;
+                left: 1025px;
+                i{
+                    @extend .footer-i;background-position: -129px -360px;
+                }
+            }
+        }
+        /* 列表 */
+        .footer-list{
+            padding: 30px 0;
+            border-bottom: 1px solid #dedede;
+            overflow: hidden;
+            .list{
+                width: 200px;
+                float: left;
+            }
+            h4{
+                color: #333;
+                font-size: 16px;
+                line-height: 1;
+                margin-bottom: 14px;
+                font-weight: normal;
+            }
+            .innerList li{
+                margin-bottom: 10px;
+            }
+            .innerList li a{
+                color: #666;
+                font-size: 14px;
+            }
+        }
+        /* 奖项 */
+        .footer-prize{
+            height: 203px;
+            position: relative;
+            // float: left;
+            .prize-item{
+                position: absolute;
+                top: 30px;
+                text-align: center;
+            }
+            p{
+                color: #999;
+                font-size: 14px;
+                line-height: 1;
+                margin-bottom: 10px;
+            }
+            .prize-item1{
+                @extend .footer-prize;
+                width: 100px;
+                left: 0;
+                i{
+                    @extend .prize-i;
+                    background-position: 0 -178px;
+                }
+            }
+            .prize-item2{
+                @extend .footer-prize;
+                width: 90px;
+                left: 138px;
+                i{
+                    @extend .prize-i;
+                    background-position: -91px -178px;
+                }
+            }
+            .prize-item3{
+                @extend .footer-prize;
+                width: 90px;
+                left: 276px;
+                i{
+                    @extend .prize-i;
+                    background-position: -182px -178px;
+                }
+            }
+            .prize-item4{
+                @extend .footer-prize;
+                width: 144px;
+                left: 389px;
+                i{
+                    @extend .prize-i;
+                    background-position: -273px -178px;
+                }
+            }
+            .prize-item5{
+                @extend .footer-prize;
+                width: 90px;
+                left: 552px;
+                i{
+                    @extend .prize-i;
+                    background-position: -364px -178px;
+                }
+            }
+            .prize-item6{
+                @extend .footer-prize;
+                width: 125px;
+                left: 673px;
+                i{
+                    @extend .prize-i;
+                    background-position: 0 -269px;
+                }
+            }
+            .prize-item7{
+                @extend .footer-prize;
+                width: 90px;
+                left: 828px;
+                i{
+                    @extend .prize-i;
+                    background-position: -91px -269px;
+                }
+            }
+            .prize-item8{
+                @extend .footer-prize;
+                width: 90px;
+                left: 966px;
+                i{
+                    @extend .prize-i;
+                    background-position: -182px -269px;
+                }
+            }
+            .prize-item9{
+                @extend .footer-prize;
+                width: 115px;
+                left: 1088px;
+                i{
+                    @extend .prize-i;
+                    background-position: -273px -269px;
+                }
+            }
+        }
+    }
+    /* 版权 */
+    .footer-copyright{
+        padding: 30px 0;
+        background-color: #f7f7f7;
+        .footer-copyright-main{
+            width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+            .copyright-p1{
+                font-size: 18px;
+                color: #999;
+                line-height: 24px;
+                margin-bottom: 9px;
+            }
+            .copyright-p2{
+                font-size: 12px;
+                color: #999;
+                line-height: 1;
+            }
+            .copyright-a{
+                width: 108px;
+                height: 45px;
+                display: block;
+                background: url(../img/nav-icon.png) -392px 0 no-repeat;
+                position: absolute;
+                right: 20px;
+                top: 0;
+            }
         }
     }
 }

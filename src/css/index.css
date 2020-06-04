@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
+  list-style: none;
 }
 
 .headerstyle, #header .headerBox .headerBox-left > a, #header .headerBox .headerBox-center > a, #header .headerBox .headerBox-login > a, #header .headerBox .order > a {
@@ -12,6 +13,40 @@
   display: block;
   float: left;
   text-decoration: none;
+}
+
+.footer-p, #footer .footerMain .footer-promise .footer-p1, #footer .footerMain .footer-promise .footer-p2, #footer .footerMain .footer-promise .footer-p3, #footer .footerMain .footer-promise .footer-p4 {
+  font-size: 18px;
+  color: #333;
+  padding-left: 52px;
+  height: 102px;
+  line-height: 102px;
+  position: absolute;
+  top: 0;
+}
+
+.footer-i, #footer .footerMain .footer-promise .footer-p1 i, #footer .footerMain .footer-promise .footer-p2 i, #footer .footerMain .footer-promise .footer-p3 i, #footer .footerMain .footer-promise .footer-p4 i {
+  position: absolute;
+  left: 0;
+  top: 30px;
+  width: 42px;
+  height: 42px;
+  background: url(../img/nav-icon.png) 0 0 no-repeat;
+}
+
+.prize-i, #footer .footerMain .footer-prize .prize-item1 i, #footer .footerMain .footer-prize .prize-item2 i, #footer .footerMain .footer-prize .prize-item3 i, #footer .footerMain .footer-prize .prize-item4 i, #footer .footerMain .footer-prize .prize-item5 i, #footer .footerMain .footer-prize .prize-item6 i, #footer .footerMain .footer-prize .prize-item7 i, #footer .footerMain .footer-prize .prize-item8 i, #footer .footerMain .footer-prize .prize-item9 i {
+  width: 90px;
+  height: 90px;
+  display: block;
+  margin: 0 auto;
+  background: url(../img/nav-icon.png) 0 0 no-repeat;
+  margin-bottom: 20px;
+}
+
+.prize-item {
+  position: absolute;
+  top: 30px;
+  text-align: center;
 }
 
 /* header部分 */
@@ -148,6 +183,54 @@
   background: #323436;
   float: left;
 }
+#bannerBox .banner-menu li {
+  margin-top: 1px;
+  height: 45px;
+  width: 230px;
+  line-height: 45px;
+  padding: 0 40px 0 55px;
+  position: relative;
+}
+#bannerBox .banner-menu li i {
+  width: 19px;
+  height: 16px;
+  position: absolute;
+  left: 30px;
+  top: 18px;
+}
+#bannerBox .banner-menu li .gnsjk {
+  background: url(../img/nav-icon.png) 0 0 no-repeat;
+}
+#bannerBox .banner-menu li .mklh {
+  background: url(../img/nav-icon.png) 0 0 no-repeat;
+}
+#bannerBox .banner-menu li .gjsjk {
+  background: url(../img/nav-icon.png) 0 -17px no-repeat;
+}
+#bannerBox .banner-menu li .znyj {
+  background: url(../img/nav-icon.png) 0 -33px no-repeat;
+}
+#bannerBox .banner-menu li .yxdj {
+  background: url(../img/nav-icon.png) 0 -67px no-repeat;
+}
+#bannerBox .banner-menu li .zb {
+  background: url(../img/nav-icon.png) 0 -84px no-repeat;
+}
+#bannerBox .banner-menu li .hfcz {
+  background: url(../img/nav-icon.png) 0 -101px no-repeat;
+}
+#bannerBox .banner-menu li .ywcx {
+  background: url(../img/nav-icon.png) 0 -118px no-repeat;
+}
+#bannerBox .banner-menu li .ywbl {
+  background: url(../img/nav-icon.png) 0 -135px no-repeat;
+}
+#bannerBox .banner-menu li a {
+  color: #fff;
+  display: inline-block;
+  width: 135px;
+  font-size: 16px;
+}
 #bannerBox .banner {
   height: 430px;
   width: 970px;
@@ -158,6 +241,430 @@
   height: 430px;
   width: 970px;
   float: left;
+}
+
+/*人气单品部分*/
+#module-rqdp {
+  height: 234px;
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-top: 20px;
+  position: relative;
+  background: lightsteelblue;
+}
+#module-rqdp .module-rqdp-product {
+  width: 260px;
+  float: left;
+  display: block;
+}
+#module-rqdp .module-rqdp-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+#module-rqdp .module-rqdp-right span {
+  color: #fff;
+  font-size: 26px;
+  position: absolute;
+  line-height: 1.4;
+  left: 30px;
+  top: 20px;
+}
+
+/*游戏道具部分*/
+#module-yxdj {
+  width: 1200px;
+  margin: 30px auto 0;
+  background: lightcoral;
+}
+#module-yxdj .module-yxdj-title {
+  margin-bottom: 20px;
+}
+#module-yxdj .module-yxdj-title h1 {
+  color: #303030;
+  font-size: 20px;
+  font-weight: normal;
+}
+#module-yxdj .module-yxdj-selectBar {
+  border: 1px solid #e0e0e0;
+  height: 58px;
+  width: 1200px;
+  background: lightgreen;
+  position: relative;
+}
+#module-yxdj .module-yxdj-selectBar .module-yxdj-selectBar-wrap {
+  width: 1040px;
+  height: 61px;
+  overflow: hidden;
+  position: relative;
+}
+#module-yxdj .module-yxdj-products {
+  margin-top: 16px;
+  position: relative;
+  overflow: hidden;
+}
+#module-yxdj .module-yxdj-products .no-border {
+  width: 227px;
+  height: 360px;
+  float: left;
+  margin-right: 16px;
+}
+#module-yxdj .module-yxdj-products .module-yxdj-product {
+  width: 225px;
+  height: 358px;
+  float: left;
+  border: 1px solid #fff;
+  margin-right: 16px;
+}
+#module-yxdj .module-yxdj-products .module-yxdj-productRight {
+  margin-right: 0;
+  height: 222px;
+  float: right;
+}
+#module-yxdj .module-yxdj-products .more {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 226px;
+  height: 118px;
+  border: 1px solid #fff;
+}
+
+/* 蜗牛手机卡部分 */
+#module-SIMcard {
+  width: 1200px;
+  margin: 30px auto 0;
+  padding-bottom: 40px;
+  background: gold;
+}
+#module-SIMcard .module-SIMcard-title {
+  margin-bottom: 20px;
+}
+#module-SIMcard .module-SIMcard-title h1 {
+  color: #303030;
+  font-size: 20px;
+  font-weight: normal;
+}
+#module-SIMcard .module-SIMcard-title .more {
+  float: right;
+  font-size: 14px;
+  color: #999;
+  padding-right: 29px;
+  position: relative;
+  line-height: 30px;
+}
+#module-SIMcard .module-SIMcard-title .more span {
+  background-image: url(../img/sprite.png);
+  background-position: 0 0;
+  width: 19px;
+  height: 11px;
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+#module-SIMcard .module-SIMcard-products {
+  margin-top: 16px;
+  position: relative;
+  overflow: hidden;
+}
+#module-SIMcard .module-SIMcard-products .module-SIMcard-product {
+  float: left;
+  margin-right: 16px;
+  width: 225px;
+  height: 358px;
+  border: 1px solid #fff;
+}
+#module-SIMcard .module-SIMcard-products .no-border {
+  float: left;
+  margin-right: 16px;
+  width: 227px;
+  height: 360px;
+}
+#module-SIMcard .module-SIMcard-products .module-SIMcard-productRight {
+  float: right;
+  margin-right: 0;
+}
+
+/* 蜗牛国际手机卡部分 */
+#module-INTcard {
+  width: 1200px;
+  margin: 30px auto 0;
+  padding-bottom: 40px;
+  background: gold;
+}
+#module-INTcard .module-INTcard-title {
+  margin-bottom: 20px;
+}
+#module-INTcard .module-INTcard-title h1 {
+  color: #303030;
+  font-size: 20px;
+  font-weight: normal;
+}
+#module-INTcard .module-INTcard-title .more {
+  float: right;
+  font-size: 14px;
+  color: #999;
+  padding-right: 29px;
+  position: relative;
+  line-height: 30px;
+}
+#module-INTcard .module-INTcard-title .more span {
+  background-image: url(../img/sprite.png);
+  background-position: 0 0;
+  width: 19px;
+  height: 11px;
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+#module-INTcard .module-INTcard-products {
+  margin-top: 16px;
+  position: relative;
+  overflow: hidden;
+}
+#module-INTcard .module-INTcard-products .module-INTcard-product {
+  float: left;
+  margin-right: 16px;
+  width: 225px;
+  height: 358px;
+  border: 1px solid #fff;
+}
+#module-INTcard .module-INTcard-products .no-border {
+  float: left;
+  margin-right: 16px;
+  width: 227px;
+  height: 360px;
+}
+#module-INTcard .module-INTcard-products .module-INTcard-productRight {
+  float: right;
+  margin-right: 0;
+}
+
+/* 应用部分 */
+#module-use {
+  width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  height: 500px;
+  background: lightblue;
+}
+#module-use .module-use-title {
+  margin-bottom: 20px;
+}
+#module-use .module-use-title h1 {
+  font-size: 20px;
+  color: #303030;
+  font-weight: normal;
+}
+#module-use .module-use-products {
+  margin-top: 16px;
+  position: relative;
+}
+#module-use .module-use-products .module-use-product {
+  width: 280px;
+  height: 420px;
+  float: left;
+  margin-right: 26px;
+  background: #fff;
+  text-align: center;
+}
+#module-use .module-use-products .module-use-productRight {
+  width: 280px;
+  height: 420px;
+  float: right;
+  background: #fff;
+  text-align: center;
+}
+#module-use .module-use-products .use-goods {
+  border-top: 1px solid #daae63;
+}
+#module-use .module-use-products .use-game {
+  border-top: 1px solid #8fb578;
+}
+#module-use .module-use-products .use-VR {
+  border-top: 1px solid #aa5251;
+}
+#module-use .module-use-products .use-community {
+  border-top: 1px solid #4e8bba;
+}
+
+/* 底部 */
+#footer {
+  background-color: #fff;
+  overflow: hidden;
+  border-top: 1px solid #ebebeb;
+  /* 版权 */
+}
+#footer .footerMain {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  /* 保证 */
+  /* 列表 */
+  /* 奖项 */
+}
+#footer .footerMain .footer-promise {
+  height: 102px;
+  background-color: #fff;
+  position: relative;
+  border-bottom: 1px solid #dedede;
+}
+#footer .footerMain .footer-promise .footer-p1 {
+  left: 20px;
+}
+#footer .footerMain .footer-promise .footer-p1 i {
+  background-position: 0 -360px;
+}
+#footer .footerMain .footer-promise .footer-p2 {
+  left: 380px;
+}
+#footer .footerMain .footer-promise .footer-p2 i {
+  background-position: -43px -360px;
+}
+#footer .footerMain .footer-promise .footer-p3 {
+  left: 693px;
+}
+#footer .footerMain .footer-promise .footer-p3 i {
+  background-position: -86px -360px;
+}
+#footer .footerMain .footer-promise .footer-p4 {
+  left: 1025px;
+}
+#footer .footerMain .footer-promise .footer-p4 i {
+  background-position: -129px -360px;
+}
+#footer .footerMain .footer-list {
+  padding: 30px 0;
+  border-bottom: 1px solid #dedede;
+  overflow: hidden;
+}
+#footer .footerMain .footer-list .list {
+  width: 200px;
+  float: left;
+}
+#footer .footerMain .footer-list h4 {
+  color: #333;
+  font-size: 16px;
+  line-height: 1;
+  margin-bottom: 14px;
+  font-weight: normal;
+}
+#footer .footerMain .footer-list .innerList li {
+  margin-bottom: 10px;
+}
+#footer .footerMain .footer-list .innerList li a {
+  color: #666;
+  font-size: 14px;
+}
+#footer .footerMain .footer-prize, #footer .footerMain .footer-prize .prize-item1, #footer .footerMain .footer-prize .prize-item2, #footer .footerMain .footer-prize .prize-item3, #footer .footerMain .footer-prize .prize-item4, #footer .footerMain .footer-prize .prize-item5, #footer .footerMain .footer-prize .prize-item6, #footer .footerMain .footer-prize .prize-item7, #footer .footerMain .footer-prize .prize-item8, #footer .footerMain .footer-prize .prize-item9 {
+  height: 203px;
+  position: relative;
+}
+#footer .footerMain .footer-prize .prize-item {
+  position: absolute;
+  top: 30px;
+  text-align: center;
+}
+#footer .footerMain .footer-prize p, #footer .footerMain .footer-prize .prize-item1 p, #footer .footerMain .footer-prize .prize-item2 p, #footer .footerMain .footer-prize .prize-item3 p, #footer .footerMain .footer-prize .prize-item4 p, #footer .footerMain .footer-prize .prize-item5 p, #footer .footerMain .footer-prize .prize-item6 p, #footer .footerMain .footer-prize .prize-item7 p, #footer .footerMain .footer-prize .prize-item8 p, #footer .footerMain .footer-prize .prize-item9 p {
+  color: #999;
+  font-size: 14px;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+#footer .footerMain .footer-prize .prize-item1 {
+  width: 100px;
+  left: 0;
+}
+#footer .footerMain .footer-prize .prize-item1 i {
+  background-position: 0 -178px;
+}
+#footer .footerMain .footer-prize .prize-item2 {
+  width: 90px;
+  left: 138px;
+}
+#footer .footerMain .footer-prize .prize-item2 i {
+  background-position: -91px -178px;
+}
+#footer .footerMain .footer-prize .prize-item3 {
+  width: 90px;
+  left: 276px;
+}
+#footer .footerMain .footer-prize .prize-item3 i {
+  background-position: -182px -178px;
+}
+#footer .footerMain .footer-prize .prize-item4 {
+  width: 144px;
+  left: 389px;
+}
+#footer .footerMain .footer-prize .prize-item4 i {
+  background-position: -273px -178px;
+}
+#footer .footerMain .footer-prize .prize-item5 {
+  width: 90px;
+  left: 552px;
+}
+#footer .footerMain .footer-prize .prize-item5 i {
+  background-position: -364px -178px;
+}
+#footer .footerMain .footer-prize .prize-item6 {
+  width: 125px;
+  left: 673px;
+}
+#footer .footerMain .footer-prize .prize-item6 i {
+  background-position: 0 -269px;
+}
+#footer .footerMain .footer-prize .prize-item7 {
+  width: 90px;
+  left: 828px;
+}
+#footer .footerMain .footer-prize .prize-item7 i {
+  background-position: -91px -269px;
+}
+#footer .footerMain .footer-prize .prize-item8 {
+  width: 90px;
+  left: 966px;
+}
+#footer .footerMain .footer-prize .prize-item8 i {
+  background-position: -182px -269px;
+}
+#footer .footerMain .footer-prize .prize-item9 {
+  width: 115px;
+  left: 1088px;
+}
+#footer .footerMain .footer-prize .prize-item9 i {
+  background-position: -273px -269px;
+}
+#footer .footer-copyright {
+  padding: 30px 0;
+  background-color: #f7f7f7;
+}
+#footer .footer-copyright .footer-copyright-main {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+#footer .footer-copyright .footer-copyright-main .copyright-p1 {
+  font-size: 18px;
+  color: #999;
+  line-height: 24px;
+  margin-bottom: 9px;
+}
+#footer .footer-copyright .footer-copyright-main .copyright-p2 {
+  font-size: 12px;
+  color: #999;
+  line-height: 1;
+}
+#footer .footer-copyright .footer-copyright-main .copyright-a {
+  width: 108px;
+  height: 45px;
+  display: block;
+  background: url(../img/nav-icon.png) -392px 0 no-repeat;
+  position: absolute;
+  right: 20px;
+  top: 0;
 }
 
 /*# sourceMappingURL=index.css.map */

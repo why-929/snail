@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#main {
+    width: 1000px;
+    margin: 0 auto;
+    /* background: lightcyan; */
+}
+/*logo部分*/
+.logo{
+    margin: 24px 0 99px 0;
+    height: 51px;
+    /* background: lightcoral; */
+    a{
+        display: inline-block;
+        float: left;
+        text-decoration: none;
+    }
+    img{
+        display: block;
+    }
+    span{
+        display: inline-block;
+        height: 51px;
+        color: #231815;
+        font-size: 20px;
+        line-height: 70px;
+        padding-left: 20px;
+    }
+}
+/*表单上的文字部分*/
+#menu{
+    width: 1000px;
+    /* background: lightgreen; */
+    h3{
+        font-size: 24px;
+        font-weight: bold;
+        color: #222222;
+        text-align: center;
+        line-height: 1;
+        margin-bottom: 68px;
+    }
+    .loginBox{
+        height: 25px;
+        width: 300px;
+        /* background: lightseagreen; */
+        margin: 0 0 0 348px;
+        position: relative;
+        span{
+            font-size: 17px;
+            color: #666666;
+        }
+        p{
+            position: absolute;
+            right: 0;
+            top: 0;
+            font-size: 14px;
+            color: #999999;
+        }
+    }
+    a{
+        color: #fd8900;
+        text-decoration: none;
+    }
+}
+/*表单部分*/
+#registerBox {
+    margin-left: 250px;
+    label{
+        width: 7em;
+        font-size: 14px;
+        text-align: right;
+        line-height: 46px;
+        color: #333333;
+    }
+    input{
+        width: 300px;
+        height: 46px;
+    }
+    .row{
+        padding: 10px 0;
+    }
+}
