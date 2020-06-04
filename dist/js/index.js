@@ -1,1 +1,1 @@
-"use strict";!function(o){o(".showNav").on("mouseenter",function(){console.log(111),o(".hiddenNav").stop(!0).animate({top:0})})}(jQuery);
+"use strict";!function(o){o(".sideBar-top").on("click",function(){o("html,body").animate({scrollTop:0},200)})}(jQuery);

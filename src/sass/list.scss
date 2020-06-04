@@ -1,15 +1,18 @@
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
     text-decoration: none;
     list-style: none;
 }
 $width:1200px;
 $fontSize:14px;
-#main {
-    width: 1000px;
-    margin: 0 auto;
-    /* background: lightcyan; */
+.headerstyle{
+    color: #989898;
+    font-size: $fontSize;
+    line-height: 44px;
+    display: block;
+    float: left;
+    text-decoration: none;
 }
 .footer-p{
     font-size: 18px;
@@ -41,102 +44,221 @@ $fontSize:14px;
     top: 30px;
     text-align: center;
 }
-/*logo部分*/
-.logo{
-    margin: 24px 0 99px 0;
-    height: 51px;
-    /* background: lightcoral; */
-    a{
-        display: inline-block;
-        float: left;
-        text-decoration: none;
+/* header部分 */
+#header{
+    width: 100%;
+    height: 44px;
+    background: #323436;
+    .headerBox{
+        width: $width;
+        height: 44px;
+        margin: 0 auto;
+        // background: lightcoral;
+        //header左边部分
+        .headerBox-left{
+            float: left;
+        }
+        img{
+            float: left;
+            display: block;
+        }
+        .headerBox-left>a{
+            @extend .headerstyle;
+            padding: 0 19px;
+            &:hover{
+                color: #fff;
+            }
+        }
+        //header中间部分
+        .headerBox-center{
+            float: left;
+            &>a{
+                @extend .headerstyle;
+                padding: 0 19px;
+                &:hover{
+                    color: #fff;
+                }
+            }
+        }
+        .headerBox-login>a{
+            @extend .headerstyle;
+            &:hover{
+                color: #fff;
+            }
+        }
+        .headerBox-login .one{
+            width: 100px;
+            padding: 0 19px;
+        }
+        .headerBox-login .two{
+            padding: 0 19px;
+        }
+        //header右边部分
+        .order>a{
+            @extend .headerstyle;
+            padding: 0 19px;
+            &:hover{
+                color: #fff;
+            }
+        }
+        .cart{
+            position: relative;
+            float: right;
+            & i{
+                display: block;
+                width: 21px;
+                height: 16px;
+                position: absolute;
+                left: 38px;
+                top: 16px;
+                background: url(http://mobile.snail.com/static/common/images/nav-icon.png) -50px 0 no-repeat;
+            }
+            a{
+                width: 110px;
+                height: 43px;
+                line-height: 43px;
+                border: 1px solid #232426;
+                border-bottom: 0;
+                display: block;
+                padding-left: 68px;
+                color: #989898;
+                font-size: 14px;
+                text-decoration: none;
+                background: #232426;
+            }
+            span{
+                color: #fa0;
+            }
+        }
     }
-    img{
+}
+/*侧边栏工具条*/
+#sideBar{
+    width: 45px;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    min-height: 100%;
+    background-color: #e0e0e0;
+    .sideBar-forum{
+        width: 45px;
+        height: 75px;
+        position: absolute;
+        cursor: pointer;
+        left: 0;
+        top: 320px;
+        background: url(../img/sidebar.png) -55px -152px no-repeat;
+        z-index: 999;
+        &:hover{
+            background-position: -55px -228px;
+        }
+    }
+    .sideBar-service{
+        width: 45px;
+        height: 75px;
+        position: absolute;
+        cursor: pointer;
+        left: 0;
+        top: 395px;
+        background: url(../img/sidebar.png) -55px -304px no-repeat;
+        z-index: 999;        
+        &:hover{
+            background-position: -55px -379px;
+        }
+    }
+    .sideBar-share{
+        width: 45px;
+        height: 75px;
+        position: absolute;
+        cursor: pointer;
+        left: 0;
+        top: 470px;
+        background: url(../img/sidebar.png) 0 -947px no-repeat;
+        z-index: 999;
+        &:hover{
+            background-position: -55px -947px;
+        }
+    }
+    .sideBar-idea{
+        width: 45px;
+        height: 75px;
+        position: absolute;
+        cursor: pointer;
+        left: 0;
+        top: 545px;
+        background: url(../img/sidebar.png) -55px -456px no-repeat;
+        z-index: 999;
+        &:hover{
+            background-position: -55px -532px;
+        }
+    }
+    .sideBar-top{
+        width: 45px;
+        height: 75px;
+        position: absolute;
+        cursor: pointer;
+        left: 0;
+        bottom: 20px;
+        background: url(../img/sidebar.png) -55px -608px no-repeat;
+        z-index: 999;
+        &:hover{
+            background-position: -55px -684px;
+        }
+    }
+}
+/* top-nav部分 */
+#top-nav{
+    height: 100px;
+    width: 100%;
+    // background: lightcoral;
+    .top-navBox{
+        width: $width;
+        height: 100px;
+        margin: 0 auto;
+        position: relative;
+        // background: lightgreen;
+        .logo{
+            position: absolute;
+            left: 0;
+            top: 17px;
+        }
+        .showNav{
+            float: right;
+            li{
+                list-style: none;
+                float: left;
+                float: left;
+                height: 100px;
+                line-height: 100px;
+                padding: 0 25px;
+                a{
+                    color: #333;
+                    font-size: 18px;
+                    &:hover{
+                        color: #ff7f00;
+                    }
+                }
+            }
+        } 
+    }
+    .hiddenNav{
+        width: 100%;
+        height: 100px;
+        // background: lightgreen;
+        position: relative;
+        top: -100px;
         display: block;
     }
-    span{
-        display: inline-block;
-        height: 51px;
-        color: #231815;
-        font-size: 20px;
-        line-height: 70px;
-        padding-left: 20px;
-    }
 }
-/*表单上的文字部分*/
-#menu{
-    width: 1000px;
-    /* background: lightgreen; */
-    h3{
-        font-size: 24px;
-        font-weight: bold;
-        color: #222222;
-        text-align: center;
-        line-height: 1;
-        margin-bottom: 68px;
-    }
-    .loginBox{
-        height: 25px;
-        width: 300px;
-        /* background: lightseagreen; */
-        margin: 0 0 0 348px;
-        position: relative;
-        span{
-            font-size: 17px;
-            color: #666666;
-        }
-        p{
-            position: absolute;
-            right: 0;
-            top: 0;
-            font-size: 14px;
-            color: #999999;
-        }
-    }
-    a{
-        color: #fd8900;
-        text-decoration: none;
-    }
+/* 轮播图部分 */
+#banner{
+    width: 100%;
+    height: 280px;
+    // position: relative;
 }
-/*表单部分*/
-#registerBox {
-    margin-left: 250px;
-    .label{
-        width: 7em;
-        font-size: 14px;
-        text-align: right;
-        line-height: 46px;
-        color: #333333;
-    }
-    .input{
-        outline:none;
-        width: 300px;
-        height: 46px;
-    }
-    .row{
-        padding: 10px 0;
-    }
-    .lastrow{
-        padding: 10px 0 25px 0;
-    }
-    .agree{
-        font-size: 14px;
-        color: #999999;
-        padding-left: 99px;
-    }
-    .send{
-        padding-left: 99px;
-        input{
-            width: 300px;
-            height: 50px;
-            border: 0 none;
-            cursor: pointer;
-            font-size: 20px;
-            color: #fff;
-            background: orange;
-        }
-    }
-}
+
+
 
 /* 底部 */
 #footer{

@@ -1,15 +1,18 @@
 @charset "UTF-8";
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   text-decoration: none;
   list-style: none;
 }
 
-#main {
-  width: 1000px;
-  margin: 0 auto;
-  /* background: lightcyan; */
+.headerstyle, #header .headerBox .headerBox-left > a, #header .headerBox .headerBox-center > a, #header .headerBox .headerBox-login > a, #header .headerBox .order > a {
+  color: #989898;
+  font-size: 14px;
+  line-height: 44px;
+  display: block;
+  float: left;
+  text-decoration: none;
 }
 
 .footer-p, #footer .footerMain .footer-promise .footer-p1, #footer .footerMain .footer-promise .footer-p2, #footer .footerMain .footer-promise .footer-p3, #footer .footerMain .footer-promise .footer-p4 {
@@ -46,103 +49,321 @@
   text-align: center;
 }
 
-/*logo部分*/
-.logo {
-  margin: 24px 0 99px 0;
-  height: 51px;
-  /* background: lightcoral; */
+/* header部分 */
+#header {
+  width: 100%;
+  height: 44px;
+  background: #323436;
 }
-.logo a {
-  display: inline-block;
+#header .headerBox {
+  width: 1200px;
+  height: 44px;
+  margin: 0 auto;
+}
+#header .headerBox .headerBox-left {
   float: left;
-  text-decoration: none;
 }
-.logo img {
+#header .headerBox img {
+  float: left;
   display: block;
 }
-.logo span {
-  display: inline-block;
-  height: 51px;
-  color: #231815;
-  font-size: 20px;
-  line-height: 70px;
-  padding-left: 20px;
+#header .headerBox .headerBox-left > a {
+  padding: 0 19px;
+}
+#header .headerBox .headerBox-left > a:hover {
+  color: #fff;
+}
+#header .headerBox .headerBox-center {
+  float: left;
+}
+#header .headerBox .headerBox-center > a {
+  padding: 0 19px;
+}
+#header .headerBox .headerBox-center > a:hover {
+  color: #fff;
+}
+#header .headerBox .headerBox-login > a:hover {
+  color: #fff;
+}
+#header .headerBox .headerBox-login .one {
+  width: 100px;
+  padding: 0 19px;
+}
+#header .headerBox .headerBox-login .two {
+  padding: 0 19px;
+}
+#header .headerBox .order > a {
+  padding: 0 19px;
+}
+#header .headerBox .order > a:hover {
+  color: #fff;
+}
+#header .headerBox .cart {
+  position: relative;
+  float: right;
+}
+#header .headerBox .cart i {
+  display: block;
+  width: 21px;
+  height: 16px;
+  position: absolute;
+  left: 38px;
+  top: 16px;
+  background: url(http://mobile.snail.com/static/common/images/nav-icon.png) -50px 0 no-repeat;
+}
+#header .headerBox .cart a {
+  width: 110px;
+  height: 43px;
+  line-height: 43px;
+  border: 1px solid #232426;
+  border-bottom: 0;
+  display: block;
+  padding-left: 68px;
+  color: #989898;
+  font-size: 14px;
+  text-decoration: none;
+  background: #232426;
+}
+#header .headerBox .cart span {
+  color: #fa0;
 }
 
-/*表单上的文字部分*/
-#menu {
-  width: 1000px;
-  /* background: lightgreen; */
-}
-#menu h3 {
-  font-size: 24px;
-  font-weight: bold;
-  color: #222222;
-  text-align: center;
-  line-height: 1;
-  margin-bottom: 68px;
-}
-#menu .loginBox {
-  height: 25px;
-  width: 300px;
-  /* background: lightseagreen; */
-  margin: 0 0 0 348px;
-  position: relative;
-}
-#menu .loginBox span {
-  font-size: 17px;
-  color: #666666;
-}
-#menu .loginBox p {
-  position: absolute;
+/*侧边栏工具条*/
+#sideBar {
+  width: 45px;
+  height: 100%;
+  position: fixed;
   right: 0;
   top: 0;
-  font-size: 14px;
-  color: #999999;
+  min-height: 100%;
+  background-color: #e0e0e0;
 }
-#menu a {
-  color: #fd8900;
-  text-decoration: none;
+#sideBar .sideBar-forum {
+  width: 45px;
+  height: 75px;
+  position: absolute;
+  cursor: pointer;
+  left: 0;
+  top: 320px;
+  background: url(../img/sidebar.png) -55px -152px no-repeat;
+  z-index: 999;
+}
+#sideBar .sideBar-forum:hover {
+  background-position: -55px -228px;
+}
+#sideBar .sideBar-service {
+  width: 45px;
+  height: 75px;
+  position: absolute;
+  cursor: pointer;
+  left: 0;
+  top: 395px;
+  background: url(../img/sidebar.png) -55px -304px no-repeat;
+  z-index: 999;
+}
+#sideBar .sideBar-service:hover {
+  background-position: -55px -379px;
+}
+#sideBar .sideBar-share {
+  width: 45px;
+  height: 75px;
+  position: absolute;
+  cursor: pointer;
+  left: 0;
+  top: 470px;
+  background: url(../img/sidebar.png) 0 -947px no-repeat;
+  z-index: 999;
+}
+#sideBar .sideBar-share:hover {
+  background-position: -55px -947px;
+}
+#sideBar .sideBar-idea {
+  width: 45px;
+  height: 75px;
+  position: absolute;
+  cursor: pointer;
+  left: 0;
+  top: 545px;
+  background: url(../img/sidebar.png) -55px -456px no-repeat;
+  z-index: 999;
+}
+#sideBar .sideBar-idea:hover {
+  background-position: -55px -532px;
+}
+#sideBar .sideBar-top {
+  width: 45px;
+  height: 75px;
+  position: absolute;
+  cursor: pointer;
+  left: 0;
+  bottom: 20px;
+  background: url(../img/sidebar.png) -55px -608px no-repeat;
+  z-index: 999;
+}
+#sideBar .sideBar-top:hover {
+  background-position: -55px -684px;
 }
 
-/*表单部分*/
-#registerBox {
-  margin-left: 250px;
+/* top-nav部分 */
+#top-nav {
+  height: 100px;
+  width: 100%;
 }
-#registerBox .label {
-  width: 7em;
+#top-nav .top-navBox {
+  width: 1200px;
+  height: 100px;
+  margin: 0 auto;
+  position: relative;
+}
+#top-nav .top-navBox .logo {
+  position: absolute;
+  left: 0;
+  top: 17px;
+}
+#top-nav .top-navBox .showNav {
+  float: right;
+}
+#top-nav .top-navBox .showNav li {
+  list-style: none;
+  float: left;
+  float: left;
+  height: 100px;
+  line-height: 100px;
+  padding: 0 25px;
+}
+#top-nav .top-navBox .showNav li a {
+  color: #333;
+  font-size: 18px;
+}
+#top-nav .top-navBox .showNav li a:hover {
+  color: #ff7f00;
+}
+#top-nav .hiddenNav {
+  width: 100%;
+  height: 100px;
+  position: relative;
+  top: -100px;
+  display: block;
+}
+
+/*商品详情区域*/
+#details {
+  width: 1010px;
+  overflow: hidden;
+  margin: 40px auto 100px;
+}
+#details .part-left {
+  width: 380px;
+  height: 500px;
+  border: 1px solid #e6e6e6;
+  float: left;
+  padding: 10px 45px 0;
+  position: relative;
+}
+#details .part-right {
+  width: 510px;
+  float: right;
+}
+#details .part-right .part-right-titleBar {
+  padding: 20px 0;
+  overflow: hidden;
+  border-bottom: 1px dashed #e6e6e6;
+  margin-bottom: 15px;
+}
+#details .part-right .part-right-titleBar .title {
+  color: #333;
+  font-weight: bold;
+  font-size: 24px;
+}
+#details .part-right .part-right-titleBar .subtitle {
+  color: #ff9600;
+  margin-top: 5px;
+  font-size: 18px;
+}
+#details .part-right .bar {
+  margin-bottom: 10px;
   font-size: 14px;
-  text-align: right;
-  line-height: 46px;
-  color: #333333;
+  color: #666;
 }
-#registerBox .input {
-  outline: none;
-  width: 300px;
-  height: 46px;
+#details .part-right .bar .label {
+  width: 70px;
+  color: #999;
+  float: left;
+  margin-right: 5px;
 }
-#registerBox .row {
-  padding: 10px 0;
+#details .part-right .bar .price, #details .part-right .bar .price span {
+  color: #e7242e;
+  font-weight: bold;
+  font-size: 24px;
 }
-#registerBox .lastrow {
-  padding: 10px 0 25px 0;
+#details .part-right .warn {
+  background-color: #f7f7f7;
+  padding: 20px 10px;
+  width: 530px;
+  margin-left: -10px;
+  margin-bottom: 20px;
 }
-#registerBox .agree {
-  font-size: 14px;
-  color: #999999;
-  padding-left: 99px;
+#details .part-right .num {
+  width: 470px;
+  overflow: hidden;
+  padding: 5px 0;
+  margin-bottom: 10px;
 }
-#registerBox .send {
-  padding-left: 99px;
+#details .part-right .num .numBox {
+  float: left;
 }
-#registerBox .send input {
-  width: 300px;
-  height: 50px;
-  border: 0 none;
-  cursor: pointer;
-  font-size: 20px;
-  color: #fff;
-  background: orange;
+#details .part-right .num .numBox .btn {
+  width: 17px;
+  height: 17px;
+  float: left;
+  margin-top: 3px;
+  background: url(../img/numbtn.jpg) 0 0 no-repeat;
+}
+#details .part-right .num .numBox .moreBtn {
+  background-position: -17px 0;
+}
+#details .part-right .num .numBox input {
+  width: 44px;
+  height: 20px;
+  float: left;
+  margin: 0 5px;
+  border: 1px solid #aaa;
+  font: normal 12px/20px Arial;
+  color: #000;
+  text-align: center;
+}
+#details .part-right .buy {
+  margin-top: 35px;
+  background: lightgreen;
+}
+#details .part-right .buy .buyBtn {
+  width: 136px;
+  height: 42px;
+  line-height: 42px;
+  float: left;
+  text-align: center;
+  color: #ff4400;
+  margin-right: 25px;
+  background: #ffeded;
+  font-size: 16px;
+  font-family: 微软雅黑;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ff4400;
+  border-image: initial;
+  border-radius: 3px;
+}
+#details .part-right .buy .carBtn {
+  width: 100px;
+  padding-left: 55px;
+  height: 44px;
+  line-height: 44px;
+  float: left;
+  color: white;
+  border-radius: 3px;
+  background: url(http://static.snail.com/images/mall/carbtnbg.jpg) no-repeat;
+  font-size: 16px;
+  font-family: 微软雅黑;
 }
 
 /* 底部 */
@@ -326,4 +547,4 @@
   top: 0;
 }
 
-/*# sourceMappingURL=register.css.map */
+/*# sourceMappingURL=detail.css.map */

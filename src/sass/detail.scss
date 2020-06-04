@@ -44,9 +44,6 @@ $fontSize:14px;
     top: 30px;
     text-align: center;
 }
-@mixin borderTop($h,$style,$color){
-    border-top: $h $style $color;
-}
 /* header部分 */
 #header{
     width: 100%;
@@ -254,328 +251,132 @@ $fontSize:14px;
         display: block;
     }
 }
-/* 轮播图部分 */
-#bannerBox{
-    width:$width;
-    height: 430px;
-    margin: 0 auto;
-    background: lightsalmon;
-    .banner-menu{
-        width: 230px;
-        height: 430px;
-        background: #323436;
-        float: left;
-        li{
-            margin-top: 1px;
-            height: 45px;
-            width: 230px;
-            line-height: 45px;
-            padding: 0 40px 0 55px;
-            position: relative;
-            i{
-                width: 19px;
-                height: 16px;
-                // background: lightsalmon;
-                position: absolute;
-                left: 30px;
-                top: 18px;
-            }
-            .gnsjk{
-                background: url(../img/nav-icon.png) 0 0 no-repeat;
-            }
-            .mklh{
-                background: url(../img/nav-icon.png) 0 0 no-repeat;
-            }
-            .gjsjk{
-                background: url(../img/nav-icon.png) 0 -17px no-repeat;
-            }
-            .znyj{
-                background: url(../img/nav-icon.png) 0 -33px no-repeat;
-            }
-            .yxdj{
-                background: url(../img/nav-icon.png) 0 -67px no-repeat;
-            }
-            .zb{
-                background: url(../img/nav-icon.png) 0 -84px no-repeat;
-            }
-            .hfcz{
-                background: url(../img/nav-icon.png) 0 -101px no-repeat;
-            }
-            .ywcx{
-                background: url(../img/nav-icon.png) 0 -118px no-repeat;
-            }
-            .ywbl{
-                background: url(../img/nav-icon.png) 0 -135px no-repeat;
-            }
-            a{
-                color: #fff;
-                display: inline-block;
-                width: 135px;
-                font-size: 16px;
-            }
-        }
-    }
-    .banner{
-        height: 430px;
-        width: 1200 - 230px;
-        float: right;
-        overflow: hidden;
-        img{
-            height: 430px;
-            width: 1200 - 230px;
-            float: left;
-        }
-    }
-}
-/*人气单品部分*/
-#module-rqdp{
-    height: 234px;
-    width: $width;
-    margin: 0 auto;
+/*商品详情区域*/
+#details{
+    width: 1010px;
     overflow: hidden;
-    padding-top: 20px;
-    position: relative;
-    background: lightsteelblue;
-    .module-rqdp-product{
-        width: 260px;
+    margin: 40px auto 100px;
+    .part-left{
+        width: 380px;
+        height: 500px;
+        border: 1px solid #e6e6e6;
         float: left;
-        // font-size: 16px;
-        // text-align: center;
-        display: block;
+        padding: 10px 45px 0;
+        position: relative;
     }
-    .module-rqdp-right{
-        position: absolute;
-        top: 0;
-        right: 0;
-        span{
-            color: #fff;
-            font-size: 26px;
-            position: absolute;
-            line-height: 1.4;
-            left: 30px;
-            top: 20px;
+    .part-right{
+        width: 510px;
+        float: right;
+        // background: lightblue;
+        .part-right-titleBar{
+            padding: 20px 0;
+            overflow: hidden;
+            border-bottom: 1px dashed #e6e6e6;
+            margin-bottom: 15px;
+            .title{
+                color: #333;
+                font-weight: bold;
+                font-size: 24px;
+            }
+            .subtitle{
+                color: #ff9600;
+                margin-top: 5px;
+                font-size: 18px;
+            }
+        }
+        .bar{
+            margin-bottom: 10px;
+            font-size: 14px;
+            color: #666;
+            .label{
+                width: 70px;
+                color: #999;
+                float: left;
+                margin-right: 5px;
+            }
+            .price{
+                color: #e7242e;
+                font-weight: bold;
+                font-size: 24px;
+                span{
+                    @extend .price;
+                }
+            }
+        }
+        .warn{
+            background-color: #f7f7f7;
+            padding: 20px 10px;
+            width: 530px;
+            margin-left: -10px;
+            margin-bottom: 20px;
+        }
+        .num{
+            width: 470px;
+            overflow: hidden;
+            padding: 5px 0;
+            margin-bottom: 10px;
+            // background: lightcoral;
+            .numBox{
+                float: left;
+                .btn{
+                    width: 17px;
+                    height: 17px;
+                    float: left;
+                    margin-top: 3px;
+                    background: url(../img/numbtn.jpg) 0 0 no-repeat;
+                }
+                .moreBtn{
+                    background-position: -17px 0;
+                }
+                input{
+                    width: 44px;
+                    height: 20px;
+                    float: left;
+                    margin: 0 5px;
+                    border: 1px solid #aaa;
+                    font: normal 12px/20px Arial;
+                    color: #000;
+                    text-align: center;
+                }
+            }
+        }
+        .buy{
+            margin-top: 35px;
+            background: lightgreen;
+            .buyBtn{
+                width: 136px;
+                height: 42px;
+                line-height: 42px;
+                float: left;
+                text-align: center;
+                color: rgb(255, 68, 0);
+                margin-right: 25px;
+                background: rgb(255, 237, 237);
+                font-size: 16px;
+                font-family: 微软雅黑;
+                border-width: 1px;
+                border-style: solid;
+                border-color: rgb(255, 68, 0);
+                border-image: initial;
+                border-radius: 3px;
+            }
+            .carBtn{
+                width: 100px;
+                padding-left: 55px;
+                height: 44px;
+                line-height: 44px;
+                float: left;
+                color: rgb(255, 255, 255);
+                border-radius: 3px;
+                background: url(http://static.snail.com/images/mall/carbtnbg.jpg) no-repeat;
+                font-size: 16px;
+                font-family: 微软雅黑;
+            }
         }
     }
 }
 
-/*游戏道具部分*/
-#module-yxdj{
-    width: $width;
-    margin: 30px auto 0;
-    background: lightcoral;
-    .module-yxdj-title {
-        margin-bottom: 20px;
-        h1{
-            color: #303030;
-            font-size: 20px;
-            font-weight: normal; 
-        }
-    }
-    .module-yxdj-selectBar{
-        border: 1px solid #e0e0e0;
-        height: 58px;
-        width: $width;
-        background: lightgreen;
-        position: relative;
-        .module-yxdj-selectBar-wrap{
-            width: 1040px;
-            height: 61px;
-            overflow: hidden;
-            position: relative;
-        }
-    } 
-    .module-yxdj-products{
-        margin-top: 16px;
-        position: relative;
-        overflow: hidden;
-        .no-border{
-            width: 227px;
-            height: 360px;
-            float: left;
-            margin-right: 16px;
-        }
-        .module-yxdj-product{
-            width: 225px;
-            height: 358px;
-            float: left;
-            border: 1px solid #fff;
-            margin-right: 16px;
-            // background: lightpink;
-        }
-        .module-yxdj-productRight{
-            margin-right: 0;
-            height: 222px;
-            float: right;
-            // background: blueviolet;
-        }
-        .more{
-            position: absolute;
-            right: 0;
-            bottom: 0;
-            width: 226px;
-            height: 118px;
-            border: 1px solid #fff;
-            // background: brown;
-        }
-    } 
-}
-/* 蜗牛手机卡部分 */
-#module-SIMcard{
-    width: $width;
-    margin: 30px auto 0;
-    padding-bottom: 40px;
-    background: gold;
-    .module-SIMcard-title{
-        margin-bottom: 20px;
-        h1{
-            color: #303030;
-            font-size: 20px;
-            font-weight: normal; 
-            // float: left;
-        }
-        .more{
-            float: right;
-            font-size: 14px;
-            color: #999;
-            padding-right: 29px;
-            position: relative;
-            line-height: 30px;
-            span{
-                background-image: url(../img/sprite.png);
-                background-position: 0 0;
-                width: 19px;
-                height: 11px;
-                position: absolute;
-                top: 10px;
-                right: 0;
-            }
-        }
-    }
-    .module-SIMcard-products{
-        margin-top: 16px;
-        position: relative;
-        overflow: hidden;
-        .module-SIMcard-product{
-            float: left;
-            margin-right: 16px;
-            width: 225px;
-            height: 358px;
-            border: 1px solid #fff;
-        }
-        .no-border{
-            float: left;
-            margin-right: 16px;
-            width: 227px;
-            height: 360px;
-        }
-        .module-SIMcard-productRight{
-            float: right;
-            margin-right: 0;
-        }
-    }
-}
-/* 蜗牛国际手机卡部分 */
-#module-INTcard{
-    width: $width;
-    margin: 30px auto 0;
-    padding-bottom: 40px;
-    background: gold;
-    .module-INTcard-title{
-        margin-bottom: 20px;
-        h1{
-            color: #303030;
-            font-size: 20px;
-            font-weight: normal; 
-            // float: left;
-        }
-        .more{
-            float: right;
-            font-size: 14px;
-            color: #999;
-            padding-right: 29px;
-            position: relative;
-            line-height: 30px;
-            span{
-                background-image: url(../img/sprite.png);
-                background-position: 0 0;
-                width: 19px;
-                height: 11px;
-                position: absolute;
-                top: 10px;
-                right: 0;
-            }
-        }
-    }
-    .module-INTcard-products{
-        margin-top: 16px;
-        position: relative;
-        overflow: hidden;
-        .module-INTcard-product{
-            float: left;
-            margin-right: 16px;
-            width: 225px;
-            height: 358px;
-            border: 1px solid #fff;
-        }
-        .no-border{
-            float: left;
-            margin-right: 16px;
-            width: 227px;
-            height: 360px;
-        }
-        .module-INTcard-productRight{
-            float: right;
-            margin-right: 0;
-        }
-    }
-}
-/* 应用部分 */
-#module-use{
-    width: $width;
-    margin: 0 auto;
-    padding-bottom: 40px;
-    height: 500px;
-    background: lightblue;
-    .module-use-title{
-        margin-bottom: 20px;
-        h1{
-            font-size: 20px;
-            color: #303030;
-            font-weight: normal;
-        }
-    }
-    .module-use-products{
-        margin-top: 16px;
-        position: relative;
-        .module-use-product{
-            width: 280px;
-            height: 420px;
-            float: left;
-            margin-right: 26px;
-            background: #fff;
-            text-align: center;
-        }
-        .module-use-productRight{
-            width: 280px;
-            height: 420px;
-            float: right;
-            background: #fff;
-            text-align: center;
-        }
-        .use-goods{
-            @include borderTop(1px,solid, #daae63)
-        }
-        .use-game{
-            @include borderTop(1px,solid, #8fb578)
-        }
-        .use-VR{
-            @include borderTop(1px,solid, #aa5251)
-        }
-        .use-community{
-            @include borderTop(1px,solid, #4e8bba)
-        }
-    }
-}
+
 /* 底部 */
 #footer{
     background-color: #fff;

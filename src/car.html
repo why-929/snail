@@ -2,53 +2,75 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>注册</title>
+<title>购物车</title>
 </head>
-<link rel="stylesheet" href="../src/css/register.css">
+<link rel="stylesheet" href="./css/car.css">
 <body>
-    <div id="main">
-        <!-- logo部分 -->
-        <div class="logo">
-            <a href="http://www.snail.com/" target="_blank"><img src="http://mall.snail.com/passport/register/images/logo.png">
+    <!-- header头部 -->
+    <div id="header">
+        <!-- header版心 -->
+        <div class="headerBox">
+            <!-- header左边部分(菜单/gif) -->
+            <div class="headerBox-left">
+                <a href="#">蜗牛移动</a>
+                <a href="#">免商店·免卡掌厅</a>
+                <a href="#" class="Aleft">English</a>
+                    <img src="http://att1.niucdn.com/includes/2016/1028/271728a5f5bdb54f1c37bb86d0ac4282e7922d80.gif" alt="">
+            </div>
+            <!-- header中间部分(免登录订单查询/登录注册) -->
+            <div class="headerBox-center">
+                <a href="#">免登录订单查询</a>
+            </div>
+            <div class="headerBox-login">
+                <a href="#" class="one">登录</a>
+                <a href="#" target="_Blank" class="two">注销</a>
+            </div>
+            <!-- header右边部分(我的订单/购物车) -->
+            <div class="order">
+                <a href="#">我的订单</a>
+            </div>
+            <div class="cart">
+                <a href="#">
+                    <i></i>购物车
+                </a>
+            </div>
+        </div>
+
+    </div>
+        <!-- 侧边栏工具条 -->
+        <div id="sideBar">
+            <!-- 论坛 -->
+            <div class="sideBar-forum"></div>
+            <!-- 客服 -->
+            <div class="sideBar-service"></div>
+            <!-- 分享 -->
+            <div class="sideBar-share"></div>
+            <!-- 意见反馈 -->
+            <div class="sideBar-idea"></div>
+            <!-- 返回顶部 -->
+            <div class="sideBar-top"></div>
+        </div>
+    <!-- 我的购物车 -->
+    <div id="car-top">
+        <div class="car-top-inner">
+            <a href="#" class="logo">
+                <img src="http://static.snail.com/images/cart/snail.png" alt="">
             </a>
-            <span>欢迎注册</span>
+            我的购物车
         </div>
-        <!-- 表单上的文字部分 -->
-        <div id="menu">
-            <h3>蜗牛通行证，适用于蜗牛旗下所有游戏！</h3>
-            <div class="loginBox">
-                <span>蜗牛通行证注册</span>
-                <p>已注册 , <a href="">登录</a></p>
-            </div>
+    </div>
+    <div id="carBox">
+        <div class="carTitle">
+            <div class="col1">&nbsp;</div>
+            <div class="col2">商品信息</div>
+            <div class="col3">单价（元）</div>
+            <div class="col4">数量</div>
+            <div class="col5">金额（元）</div>
+            <div class="col6">操作</div>
         </div>
-        <!-- 表单部分 -->
-        <form action="" id="registerBox">
-            <div class="row">
-                <label for="" class="label">创建账号：</label>
-                <input type="text" class="input" placeholder="6-25位字母数字或下划线组成">
-            </div>
-            <div class="row">
-                <label for="" class="label">设置密码：</label>
-                <input type="password" class="input" placeholder="6-20个字符组成">
-            </div>
-            <div class="row">
-                <label for="" class="label">确认密码：</label>
-                <input type="password" class="input" placeholder="确认密码">
-            </div>
-            <div class="row">
-                <label for="" class="label">手机号码：</label>
-                <input type="text" class="input" placeholder="可享受官方增值服务">
-            </div>
-            <div class="row agree">
-                <label for="">
-                    <input type="checkbox">&nbsp;我已仔细阅读并接受
-                    <a href="http://www.snail.com/static/service/argument.html" target="_blank">《Snail 账号协议》</a>
-                </label>
-            </div>
-            <div class="lastrow send">
-                <input type="submit" value="注  册">
-            </div>
-        </form>
+        <div class="carInner">
+            
+        </div>
     </div>
     <!-- 底部 -->
     <div id="footer">
@@ -179,6 +201,5 @@
                 </div>
         </div>
     </div>
-
 </body>
 </html>
