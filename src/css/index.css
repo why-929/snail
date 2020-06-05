@@ -238,15 +238,17 @@
 #top-nav .top-navBox .showNav li a:hover {
   color: #ff7f00;
 }
-#top-nav .hiddenNav {
-  width: 100%;
-  height: 100px;
-  position: relative;
-  top: -100px;
-  display: block;
-}
 
 /* 轮播图部分 */
+.munuActive {
+  background-color: #fff;
+  border: 1px solid #ff9500;
+  border-right: none;
+}
+.munuActive span {
+  color: #333;
+}
+
 #bannerBox {
   width: 1200px;
   height: 430px;
@@ -256,18 +258,18 @@
 #bannerBox .banner-menu {
   width: 230px;
   height: 430px;
-  background: #323436;
   float: left;
+  background: #323436;
+  position: relative;
 }
 #bannerBox .banner-menu li {
-  margin-top: 1px;
-  height: 45px;
-  width: 230px;
-  line-height: 45px;
+  height: 46px;
+  width: 134px;
+  line-height: 46px;
   padding: 0 40px 0 55px;
   position: relative;
 }
-#bannerBox .banner-menu li i {
+#bannerBox .banner-menu li .menulogo {
   width: 19px;
   height: 16px;
   position: absolute;
@@ -306,17 +308,59 @@
   display: inline-block;
   width: 135px;
   font-size: 16px;
+  margin-top: 2px;
+  height: 46px;
+  line-height: 46px;
+}
+#bannerBox .second-menu {
+  width: 300px;
+  height: 428px;
+  position: absolute;
+  left: 230px;
+  top: 0;
+  background: #fff;
+  display: none;
+  z-index: 999;
+  border: 1px solid #ff9500;
+  border-left: none;
 }
 #bannerBox .banner {
   height: 430px;
   width: 970px;
   float: right;
-  overflow: hidden;
+  position: relative;
+}
+#bannerBox .banner ul li {
+  float: left;
 }
 #bannerBox .banner img {
   height: 430px;
   width: 970px;
-  float: left;
+  display: block;
+}
+#bannerBox .banner .leftBtn {
+  width: 46px;
+  height: 70px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -35px;
+  background: url(../img/sprite.png) 0 -279px;
+}
+#bannerBox .banner .leftBtn:hover {
+  background: url(../img/sprite.png) 0 -379px;
+}
+#bannerBox .banner .rightBtn {
+  width: 46px;
+  height: 70px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -35px;
+  background: url(../img/sprite.png) 0 -479px;
+}
+#bannerBox .banner .rightBtn:hover {
+  background: url(../img/sprite.png) 0 -579px;
 }
 
 /*人气单品部分*/
