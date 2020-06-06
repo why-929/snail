@@ -137,6 +137,7 @@
   top: 0;
   min-height: 100%;
   background-color: #e0e0e0;
+  z-index: 999;
 }
 #sideBar .sideBar-forum {
   width: 45px;
@@ -208,6 +209,8 @@
 #top-nav {
   height: 100px;
   width: 100%;
+  position: relative;
+  z-index: 100;
 }
 #top-nav .top-navBox {
   width: 1200px;
@@ -237,6 +240,14 @@
 }
 #top-nav .top-navBox .showNav li a:hover {
   color: #ff7f00;
+}
+#top-nav .hideNav {
+  width: 100%;
+  height: 190px;
+  background: lightgreen;
+  position: absolute;
+  top: -190px;
+  display: none;
 }
 
 /* 轮播图部分 */
@@ -328,12 +339,19 @@
   height: 430px;
   width: 970px;
   float: right;
+  overflow: hidden;
   position: relative;
+}
+#bannerBox .banner ul {
+  /* 保证轮播图移动 */
+  position: absolute;
+  left: 0px;
+  top: 0px;
 }
 #bannerBox .banner ul li {
   float: left;
 }
-#bannerBox .banner img {
+#bannerBox .banner ul li img {
   height: 430px;
   width: 970px;
   display: block;
@@ -361,6 +379,26 @@
 }
 #bannerBox .banner .rightBtn:hover {
   background: url(../img/sprite.png) 0 -579px;
+}
+#bannerBox .banner ol {
+  position: absolute;
+  top: 388px;
+  width: 100%;
+  text-align: center;
+}
+#bannerBox .banner ol .olActive {
+  background-position: 0 -83px;
+}
+#bannerBox .banner ol li {
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 8px;
+  width: 12px;
+  height: 12px;
+  background: url(../img/sprite.png) 0 -41px;
+}
+#bannerBox .banner ol li:hover {
+  background: url(../img/sprite.png) 0 -83px;
 }
 
 /*人气单品部分*/

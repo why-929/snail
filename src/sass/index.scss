@@ -52,6 +52,7 @@ $fontSize:14px;
     width: 100%;
     height: 44px;
     background: #323436;
+    // z-index: 100;
     .headerBox{
         width: $width;
         height: 44px;
@@ -144,6 +145,7 @@ $fontSize:14px;
     top: 0;
     min-height: 100%;
     background-color: #e0e0e0;
+    z-index: 999;
     .sideBar-forum{
         width: 45px;
         height: 75px;
@@ -214,13 +216,13 @@ $fontSize:14px;
 #top-nav{
     height: 100px;
     width: 100%;
-    // background: lightcoral;
+    position: relative;
+    z-index: 100;
     .top-navBox{
         width: $width;
         height: 100px;
         margin: 0 auto;
         position: relative;
-        // background: lightgreen;
         .logo{
             position: absolute;
             left: 0;
@@ -228,6 +230,7 @@ $fontSize:14px;
         }
         .showNav{
             float: right;
+            // z-index: 100;
             li{
                 list-style: none;
                 float: left;
@@ -245,15 +248,17 @@ $fontSize:14px;
             }
         } 
     }
-    // .hiddenNav{
-    //     width: 100%;
-    //     height: 100px;
-    //     // background: lightgreen;
-    //     position: relative;
-    //     top: -100px;
-    //     display: block;
-    // }
+    .hideNav{
+        width: 100%;
+        height: 190px;
+        background: lightgreen;
+        position: absolute;
+        top:-190px;
+        display: none;
+        // z-index: 100;
+    }
 }
+
 /* 轮播图部分 */
 .munuActive{
     background-color: #fff;
@@ -263,9 +268,6 @@ $fontSize:14px;
         color: #333;
     }
 }
-// .olActive{
-
-// }
 #bannerBox{
     width:$width;
     height: 430px;
@@ -345,15 +347,21 @@ $fontSize:14px;
         height: 430px;
         width: 1200 - 230px;
         float: right;
-        // overflow: hidden;
+        overflow: hidden;
         position: relative;
-        ul li{
-            float: left;
-        }
-        img{
-            height: 430px;
-            width: 1200 - 230px;
-            display: block;
+        ul {
+            /* 保证轮播图移动 */
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            li{
+                float: left;
+                img{
+                    height: 430px;
+                    width: 1200 - 230px;
+                    display: block;
+                }
+            }
         }
         .leftBtn{
             width: 46px;
@@ -379,6 +387,27 @@ $fontSize:14px;
                 background: url(../img/sprite.png) 0 -579px;
             }
         }
+        ol{
+            position: absolute;
+            top: 388px;
+            width: 100%;
+            text-align: center;
+            .olActive{
+                background-position: 0 -83px;
+            }
+            li{
+                cursor: pointer;
+                display: inline-block;
+                margin: 0 8px;
+                width: 12px;
+                height: 12px;
+                background: url(../img/sprite.png) 0 -41px;
+                &:hover{
+                    background: url(../img/sprite.png) 0 -83px;
+                }
+            }
+        }
+
     }
 }
 /*人气单品部分*/
