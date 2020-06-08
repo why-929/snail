@@ -6,6 +6,10 @@
   list-style: none;
 }
 
+html, body {
+  background: #f7f7f7;
+}
+
 .headerstyle, #header .headerBox .headerBox-left > a, #header .headerBox .headerBox-center > a, #header .headerBox .headerBox-login > a, #header .headerBox .order > a {
   color: #989898;
   font-size: 14px;
@@ -211,6 +215,7 @@
   width: 100%;
   position: relative;
   z-index: 100;
+  background: #fff;
 }
 #top-nav .top-navBox {
   width: 1200px;
@@ -409,12 +414,32 @@
   overflow: hidden;
   padding-top: 20px;
   position: relative;
-  background: lightsteelblue;
+  background: #fff;
 }
 #module-rqdp .module-rqdp-product {
   width: 260px;
   float: left;
+  font-size: 16px;
+  text-align: center;
   display: block;
+}
+#module-rqdp .module-rqdp-product img {
+  display: block;
+  width: 164px;
+  height: 164px;
+  padding-left: 50px;
+}
+#module-rqdp .module-rqdp-product .module-rqdp-product-name {
+  color: #333;
+  text-align: center;
+  padding-top: 10px;
+}
+#module-rqdp .module-rqdp-product .module-rqdp-product-name:hover {
+  color: #f86a00;
+}
+#module-rqdp .module-rqdp-product .module-rqdp-product-price {
+  color: #f86a00;
+  text-align: center;
 }
 #module-rqdp .module-rqdp-right {
   position: absolute;
@@ -434,7 +459,6 @@
 #module-yxdj {
   width: 1200px;
   margin: 30px auto 0;
-  background: lightcoral;
 }
 #module-yxdj .module-yxdj-title {
   margin-bottom: 20px;
@@ -448,7 +472,6 @@
   border: 1px solid #e0e0e0;
   height: 58px;
   width: 1200px;
-  background: lightgreen;
   position: relative;
 }
 #module-yxdj .module-yxdj-selectBar .module-yxdj-selectBar-wrap {
@@ -456,6 +479,31 @@
   height: 61px;
   overflow: hidden;
   position: relative;
+}
+#module-yxdj .module-yxdj-selectBar .module-yxdj-selectBar-wrap .moudule-yxdj-active {
+  border-bottom: 2px solid orange;
+}
+#module-yxdj .module-yxdj-selectBar .module-yxdj-selectBar-wrap li {
+  float: left;
+  width: 208px;
+  text-align: center;
+}
+#module-yxdj .module-yxdj-selectBar .module-yxdj-selectBar-wrap li a {
+  display: block;
+  text-align: center;
+  height: 58px;
+  line-height: 58px;
+}
+#module-yxdj .module-yxdj-selectBar .module-yxdj-selectBar-wrap li a img {
+  width: 40px;
+  display: inline-block;
+  margin-right: 15px;
+  margin-top: 3px;
+}
+#module-yxdj .module-yxdj-selectBar .module-yxdj-selectBar-wrap li span {
+  font-size: 16px;
+  color: #333;
+  vertical-align: top;
 }
 #module-yxdj .module-yxdj-products {
   margin-top: 16px;
@@ -474,6 +522,48 @@
   float: left;
   border: 1px solid #fff;
   margin-right: 16px;
+  background: #fff;
+}
+#module-yxdj .module-yxdj-products .module-yxdj-product:hover {
+  border: 1px solid orange;
+}
+#module-yxdj .module-yxdj-products .module-yxdj-product .module-yxdj-product-name {
+  font-size: 16px;
+  color: #333;
+  text-align: left;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  margin-left: 30px;
+  line-height: 1;
+}
+#module-yxdj .module-yxdj-products .module-yxdj-product .module-yxdj-product-price {
+  font-size: 14px;
+  color: #f86a00;
+  text-align: left;
+  margin-left: 30px;
+  margin-bottom: 80px;
+  line-height: 1;
+}
+#module-yxdj .module-yxdj-products .module-yxdj-product img {
+  display: block;
+  width: 190px;
+  height: 190px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+#module-yxdj .module-yxdj-products .module-yxdj-product .module-yxdj-productRight-price {
+  font-size: 14px;
+  color: #f86a00;
+  text-align: left;
+  margin-left: 30px;
+  line-height: 1;
+}
+#module-yxdj .module-yxdj-products .module-yxdj-product .module-yxdj-productRight-img {
+  display: block;
+  width: 145px;
+  height: 145px;
+  margin: 0 auto;
+  overflow: hidden;
 }
 #module-yxdj .module-yxdj-products .module-yxdj-productRight {
   margin-right: 0;
@@ -488,13 +578,39 @@
   height: 118px;
   border: 1px solid #fff;
 }
+#module-yxdj .module-yxdj-products .more:hover {
+  border: 1px solid orange;
+}
+#module-yxdj .module-yxdj-products .more .look-more {
+  color: #333;
+  font-size: 22px;
+  position: absolute;
+  top: 38px;
+  left: 40px;
+}
+#module-yxdj .module-yxdj-products .more .store {
+  color: #666;
+  font-size: 14px;
+  width: 167px;
+  text-align: center;
+  left: 0;
+  top: 70px;
+  position: absolute;
+}
+#module-yxdj .module-yxdj-products .more .moreBtn {
+  background: url(../img/sprite.png) 0 -202px;
+  width: 47px;
+  height: 47px;
+  position: absolute;
+  right: 40px;
+  top: 37px;
+}
 
 /* 蜗牛手机卡部分 */
 #module-SIMcard {
   width: 1200px;
   margin: 30px auto 0;
   padding-bottom: 40px;
-  background: gold;
 }
 #module-SIMcard .module-SIMcard-title {
   margin-bottom: 20px;
@@ -511,6 +627,9 @@
   padding-right: 29px;
   position: relative;
   line-height: 30px;
+}
+#module-SIMcard .module-SIMcard-title .more:hover {
+  color: orange;
 }
 #module-SIMcard .module-SIMcard-title .more span {
   background-image: url(../img/sprite.png);
@@ -532,6 +651,40 @@
   width: 225px;
   height: 358px;
   border: 1px solid #fff;
+  background: #fff;
+}
+#module-SIMcard .module-SIMcard-products .module-SIMcard-product:hover {
+  border: 1px solid orange;
+}
+#module-SIMcard .module-SIMcard-products .module-SIMcard-product .module-SIMcard-render-title {
+  font-size: 16px;
+  color: #333;
+  text-align: left;
+  margin-top: 30px;
+  margin-bottom: 8px;
+  margin-left: 30px;
+  line-height: 1;
+}
+#module-SIMcard .module-SIMcard-products .module-SIMcard-product .module-SIMcard-render-describe {
+  font-size: 14px;
+  color: #999;
+  line-height: 1;
+  margin-bottom: 8px;
+  text-align: left;
+  margin-left: 30px;
+}
+#module-SIMcard .module-SIMcard-products .module-SIMcard-product .module-SIMcard-render-price {
+  font-size: 14px;
+  color: #f86a00;
+  text-align: left;
+  margin-left: 30px;
+  margin-bottom: 60px;
+  line-height: 1;
+}
+#module-SIMcard .module-SIMcard-products .module-SIMcard-product img {
+  width: 197px;
+  height: 190px;
+  padding-left: 15px;
 }
 #module-SIMcard .module-SIMcard-products .no-border {
   float: left;
@@ -539,7 +692,7 @@
   width: 227px;
   height: 360px;
 }
-#module-SIMcard .module-SIMcard-products .module-SIMcard-productRight {
+#module-SIMcard .module-SIMcard-products .module-SIMcard-product:last-child {
   float: right;
   margin-right: 0;
 }
@@ -549,7 +702,6 @@
   width: 1200px;
   margin: 30px auto 0;
   padding-bottom: 40px;
-  background: gold;
 }
 #module-INTcard .module-INTcard-title {
   margin-bottom: 20px;
@@ -566,6 +718,9 @@
   padding-right: 29px;
   position: relative;
   line-height: 30px;
+}
+#module-INTcard .module-INTcard-title .more:hover {
+  color: orange;
 }
 #module-INTcard .module-INTcard-title .more span {
   background-image: url(../img/sprite.png);
@@ -587,6 +742,7 @@
   width: 225px;
   height: 358px;
   border: 1px solid #fff;
+  background: #fff;
 }
 #module-INTcard .module-INTcard-products .no-border {
   float: left;
@@ -594,7 +750,37 @@
   width: 227px;
   height: 360px;
 }
-#module-INTcard .module-INTcard-products .module-INTcard-productRight {
+#module-INTcard .module-INTcard-products .module-INTcard-render .module-INTcard-render-title {
+  font-size: 16px;
+  color: #333;
+  text-align: left;
+  margin-top: 30px;
+  margin-bottom: 8px;
+  margin-left: 30px;
+  line-height: 1;
+}
+#module-INTcard .module-INTcard-products .module-INTcard-render .module-INTcard-render-describe {
+  font-size: 14px;
+  color: #999;
+  line-height: 1;
+  margin-bottom: 8px;
+  text-align: left;
+  margin-left: 30px;
+}
+#module-INTcard .module-INTcard-products .module-INTcard-render .module-INTcard-render-price {
+  font-size: 14px;
+  color: #f86a00;
+  text-align: left;
+  margin-left: 30px;
+  margin-bottom: 60px;
+  line-height: 1;
+}
+#module-INTcard .module-INTcard-products .module-INTcard-render img {
+  width: 197px;
+  height: 190px;
+  padding-left: 15px;
+}
+#module-INTcard .module-INTcard-products .module-INTcard-render .module-INTcard-product:last-child {
   float: right;
   margin-right: 0;
 }

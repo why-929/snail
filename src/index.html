@@ -172,10 +172,8 @@
     </div>
     <!-- 人气单品部分 -->
     <div id="module-rqdp">
-        <a href="#" class="module-rqdp-product" target="_blank"></a>
-        <a href="#" class="module-rqdp-product" target="_blank"></a>
-        <a href="#" class="module-rqdp-product" target="_blank"></a>
-        <a href="#" class="module-rqdp-product" target="_blank"></a>
+        <!-- 渲染部分 -->
+        <div class="module-rqdp-left"></div>
         <div class="module-rqdp-right">
             <span>
                 人气<br>
@@ -192,17 +190,36 @@
         </div>
         <div class="module-yxdj-selectBar">
             <div class="module-yxdj-selectBar-wrap">
+                <li class="moudule-yxdj-active">
+                    <a href="javascript:;">
+                        <img src="http://static.snail.com/images/prop/jyzj.png" alt="">
+                        <span>九阴真经</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <img src="http://static.snail.com/images/prop/wjq.png" alt="">
+                        <span>舞街区</span>
+                    </a>
+                </li>
             </div>
         </div>
         <div class="module-yxdj-products">
-            <a href="#" class="no-border">
+            <a href="javascript:;" class="no-border">
                 <img src="http://att1.woniu.com/shopmall.snail.com/2017/1127/e9ce92833932c8a610917874fe239eb59e65dc24.jpeg" alt="">
             </a>
-            <a href="#" class="module-yxdj-product"></a>
-            <a href="#" class="module-yxdj-product"></a>
-            <a href="#" class="module-yxdj-product"></a>
-            <a href="#" class="module-yxdj-product module-yxdj-productRight"></a>
-            <a href="#" target="_blank" class="more"></a>
+            <!-- 游戏道具部分渲染 -->
+            <div class="module-yxdj-render"></div>
+            <a href="javascript:;" class="module-yxdj-product module-yxdj-productRight">
+                <div class="module-yxdj-product-name">四象剑鞘</div>
+                <div class="module-yxdj-productRight-price">1298.00元</div>
+                <img src="http://attachments.snail.com/snail-app/goods/20150514080412850.jpg" class="module-yxdj-productRight-img">
+            </a>
+            <a href="javascript:;" target="_blank" class="more">
+                <span class="look-more">查看全部</span>
+                <span class="store">九阴真经商城</span>
+                <span class="moreBtn"></span>
+            </a>
         </div>
     </div>
     <!-- 蜗牛手机卡部分 -->
@@ -219,10 +236,8 @@
             <a href="#" class="no-border">
                 <img src="http://att1.woniu.com/mall.snail.com/shop/2020/0319/d1a7b0cafc379a6bd1f731974b0e7ead.png" alt="">
             </a>
-            <a href="#" class="module-SIMcard-product"></a>
-            <a href="#" class="module-SIMcard-product"></a>
-            <a href="#" class="module-SIMcard-product"></a>
-            <a href="#" class="module-SIMcard-product module-SIMcard-productRight"></a>
+            <!-- 蜗牛手机卡渲染部分 -->
+            <div class="module-SIMcard-render"></div>
         </div>
     </div>
     <!-- 蜗牛国际手机卡部分 -->
@@ -236,13 +251,11 @@
             </h1>
         </div>
         <div class="module-INTcard-products">
-            <a href="#" class="no-border">
+            <a href="javascript:;" class="no-border">
                 <img src="http://att1.woniu.com/mall.snail.com/shop/2018/0607/383c684a08cb987a5b470a4a556e071c.jpg" alt="">
             </a>
-            <a href="#" class="module-INTcard-product"></a>
-            <a href="#" class="module-INTcard-product"></a>
-            <a href="#" class="module-INTcard-product"></a>
-            <a href="#" class="module-INTcard-product module-INTcard-productRight"></a>
+            <!-- 蜗牛国际手机卡渲染部分 -->
+            <div class="module-INTcard-render"></div>
         </div>
     </div>
     <!-- 应用部分 -->
@@ -388,5 +401,6 @@
     </div>
 </body>
 <script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.12.4/jquery.js"></script>
+<script src="./js/jquery.lazyload.js"></script>
 <script src="./js/index.js"></script>
 </html>

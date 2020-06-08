@@ -6,6 +6,10 @@
   list-style: none;
 }
 
+html, body {
+  background: #f7f7f7;
+}
+
 .headerstyle, #header .headerBox .headerBox-left > a, #header .headerBox .headerBox-center > a, #header .headerBox .headerBox-login > a, #header .headerBox .order > a {
   color: #989898;
   font-size: 14px;
@@ -243,6 +247,69 @@
 #banner {
   width: 100%;
   height: 280px;
+  margin: 0 auto;
+}
+#banner img {
+  width: 100%;
+  height: 280px;
+  margin: 0 auto;
+}
+
+/*详情页渲染区域*/
+#cardBox {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 16px;
+  overflow: hidden;
+}
+#cardBox .cardInner {
+  float: left;
+  margin-right: 9px;
+  margin-bottom: 16px;
+  width: 288px;
+  height: 384px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+#cardBox .cardInner a {
+  display: block;
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+#cardBox .cardInner a h4 {
+  font-size: 16px;
+  color: #333;
+  padding-top: 24px;
+}
+#cardBox .cardInner a img {
+  width: 286px;
+  height: 286px;
+  position: absolute;
+  left: 1px;
+  bottom: 1px;
+}
+#cardBox .cardInner a .descript {
+  color: #999;
+  font-size: 14px;
+  margin: 3px 0;
+}
+#cardBox .cardInner a .price {
+  color: #ff7f00;
+  font-size: 14px;
+}
+
+/*分页*/
+#pagelist {
+  width: 100%;
+  height: 50px;
+  margin: 0 auto;
+}
+#pagelist .page {
+  width: 1200px;
+  height: 50px;
 }
 
 /* 底部 */

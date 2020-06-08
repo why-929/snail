@@ -4,6 +4,9 @@
     text-decoration: none;
     list-style: none;
 }
+html,body{
+    background: #f7f7f7;
+}
 $width:1200px;
 $fontSize:14px;
 .headerstyle{
@@ -218,6 +221,7 @@ $fontSize:14px;
     width: 100%;
     position: relative;
     z-index: 100;
+    background: #fff;
     .top-navBox{
         width: $width;
         height: 100px;
@@ -418,13 +422,32 @@ $fontSize:14px;
     overflow: hidden;
     padding-top: 20px;
     position: relative;
-    background: lightsteelblue;
+    background: #fff;
+    // background: lightsteelblue;
     .module-rqdp-product{
         width: 260px;
         float: left;
-        // font-size: 16px;
-        // text-align: center;
+        font-size: 16px;
+        text-align: center;
         display: block;
+        img{
+            display: block;
+            width: 164px;
+            height: 164px;
+            padding-left: 50px;
+        }
+        .module-rqdp-product-name{
+            color: #333;
+            text-align: center;
+            padding-top: 10px;
+            &:hover{
+                color: #f86a00;
+            }
+        }
+        .module-rqdp-product-price{
+            color: #f86a00;
+            text-align: center;
+        }
     }
     .module-rqdp-right{
         position: absolute;
@@ -445,7 +468,7 @@ $fontSize:14px;
 #module-yxdj{
     width: $width;
     margin: 30px auto 0;
-    background: lightcoral;
+    // background: lightcoral;
     .module-yxdj-title {
         margin-bottom: 20px;
         h1{
@@ -458,13 +481,38 @@ $fontSize:14px;
         border: 1px solid #e0e0e0;
         height: 58px;
         width: $width;
-        background: lightgreen;
+        // background: lightgreen;
         position: relative;
         .module-yxdj-selectBar-wrap{
             width: 1040px;
             height: 61px;
             overflow: hidden;
             position: relative;
+            .moudule-yxdj-active{
+                border-bottom: 2px solid orange;
+            }
+            li{
+                float: left;
+                width: 208px;
+                text-align: center;
+                a{
+                    display: block;
+                    text-align: center;
+                    height: 58px;
+                    line-height: 58px;
+                    img{
+                        width: 40px;
+                        display: inline-block;
+                        margin-right: 15px;
+                        margin-top: 3px;
+                    }
+                }
+                span{
+                    font-size: 16px;
+                    color: #333;
+                    vertical-align: top;
+                }
+            }
         }
     } 
     .module-yxdj-products{
@@ -483,7 +531,49 @@ $fontSize:14px;
             float: left;
             border: 1px solid #fff;
             margin-right: 16px;
+            background: #fff;
+            &:hover{
+                border: 1px solid orange;
+            }
             // background: lightpink;
+            .module-yxdj-product-name{
+                font-size: 16px;
+                color: #333;
+                text-align: left;
+                margin-top: 30px;
+                margin-bottom: 10px;
+                margin-left: 30px;
+                line-height: 1;
+            }
+            .module-yxdj-product-price{
+                font-size: 14px;
+                color: #f86a00;
+                text-align: left;
+                margin-left: 30px;
+                margin-bottom: 80px;
+                line-height: 1;
+            }
+            img{
+                display: block;
+                width: 190px;
+                height: 190px;
+                margin: 0 auto;
+                overflow: hidden;
+            }
+            .module-yxdj-productRight-price{
+                font-size: 14px;
+                color: #f86a00;
+                text-align: left;
+                margin-left: 30px;
+                line-height: 1;
+            }
+            .module-yxdj-productRight-img{
+                display: block;
+                width: 145px;
+                height: 145px;
+                margin: 0 auto;
+                overflow: hidden;
+            }
         }
         .module-yxdj-productRight{
             margin-right: 0;
@@ -498,7 +588,34 @@ $fontSize:14px;
             width: 226px;
             height: 118px;
             border: 1px solid #fff;
+            &:hover{
+                border: 1px solid orange;
+            }
             // background: brown;
+            .look-more{
+                color: #333;
+                font-size: 22px;
+                position: absolute;
+                top: 38px;
+                left: 40px;
+            }
+            .store{
+                color: #666;
+                font-size: 14px;
+                width: 167px;
+                text-align: center;
+                left: 0;
+                top: 70px;
+                position: absolute;
+            }
+            .moreBtn{
+                background: url(../img/sprite.png) 0 -202px;
+                width: 47px;
+                height: 47px;
+                position: absolute;
+                right: 40px;
+                top: 37px;
+            }
         }
     } 
 }
@@ -507,7 +624,7 @@ $fontSize:14px;
     width: $width;
     margin: 30px auto 0;
     padding-bottom: 40px;
-    background: gold;
+    // background: gold;
     .module-SIMcard-title{
         margin-bottom: 20px;
         h1{
@@ -523,6 +640,9 @@ $fontSize:14px;
             padding-right: 29px;
             position: relative;
             line-height: 30px;
+            &:hover{
+                color: orange;
+            }
             span{
                 background-image: url(../img/sprite.png);
                 background-position: 0 0;
@@ -544,6 +664,40 @@ $fontSize:14px;
             width: 225px;
             height: 358px;
             border: 1px solid #fff;
+            background: #fff;
+            &:hover{
+                border: 1px solid orange;
+            }
+            .module-SIMcard-render-title{
+                font-size: 16px;
+                color: #333;
+                text-align: left;
+                margin-top: 30px;
+                margin-bottom: 8px;
+                margin-left: 30px;
+                line-height: 1;
+            }
+            .module-SIMcard-render-describe{
+                font-size: 14px;
+                color: #999;
+                line-height: 1;
+                margin-bottom: 8px;
+                text-align: left;
+                margin-left: 30px;
+            }
+            .module-SIMcard-render-price{
+                font-size: 14px;
+                color: #f86a00;
+                text-align: left;
+                margin-left: 30px;
+                margin-bottom: 60px;
+                line-height: 1;
+            }
+            img{
+                width: 197px;
+                height: 190px;
+                padding-left: 15px;
+            }
         }
         .no-border{
             float: left;
@@ -551,7 +705,7 @@ $fontSize:14px;
             width: 227px;
             height: 360px;
         }
-        .module-SIMcard-productRight{
+        .module-SIMcard-product:last-child{
             float: right;
             margin-right: 0;
         }
@@ -562,7 +716,7 @@ $fontSize:14px;
     width: $width;
     margin: 30px auto 0;
     padding-bottom: 40px;
-    background: gold;
+    // background: gold;
     .module-INTcard-title{
         margin-bottom: 20px;
         h1{
@@ -578,6 +732,9 @@ $fontSize:14px;
             padding-right: 29px;
             position: relative;
             line-height: 30px;
+            &:hover{
+                color: orange;
+            }
             span{
                 background-image: url(../img/sprite.png);
                 background-position: 0 0;
@@ -599,6 +756,7 @@ $fontSize:14px;
             width: 225px;
             height: 358px;
             border: 1px solid #fff;
+            background: #fff;
         }
         .no-border{
             float: left;
@@ -606,9 +764,41 @@ $fontSize:14px;
             width: 227px;
             height: 360px;
         }
-        .module-INTcard-productRight{
-            float: right;
-            margin-right: 0;
+        .module-INTcard-render{
+            .module-INTcard-render-title{
+                font-size: 16px;
+                color: #333;
+                text-align: left;
+                margin-top: 30px;
+                margin-bottom: 8px;
+                margin-left: 30px;
+                line-height: 1;
+            }
+            .module-INTcard-render-describe{
+                font-size: 14px;
+                color: #999;
+                line-height: 1;
+                margin-bottom: 8px;
+                text-align: left;
+                margin-left: 30px;
+            }
+            .module-INTcard-render-price{
+                font-size: 14px;
+                color: #f86a00;
+                text-align: left;
+                margin-left: 30px;
+                margin-bottom: 60px;
+                line-height: 1;
+            }
+            img{
+                width: 197px;
+                height: 190px;
+                padding-left: 15px;
+            }
+            .module-INTcard-product:last-child{
+                float: right;
+                margin-right: 0;
+            }
         }
     }
 }

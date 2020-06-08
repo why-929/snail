@@ -6,6 +6,10 @@
   list-style: none;
 }
 
+body {
+  background: #f7f7f7;
+}
+
 .headerstyle, #header .headerBox .headerBox-left > a, #header .headerBox .headerBox-center > a, #header .headerBox .headerBox-login > a, #header .headerBox .order > a {
   color: #989898;
   font-size: 14px;
@@ -126,7 +130,7 @@
 }
 #header .headerBox .cart a:hover {
   color: red;
-  text-decoration: un;
+  text-decoration: underline;
 }
 
 /*侧边栏工具条*/
@@ -228,6 +232,7 @@
   display: block;
 }
 
+/*购物车商品盒子*/
 #carBox {
   width: 1200px;
   margin: 0 auto 50px;
@@ -240,9 +245,8 @@
   color: #333;
   font-size: 14px;
   font-family: "微软雅黑";
-  background-color: #ffffff;
+  background: #ffffff;
   padding: 10px 0;
-  background: lightpink;
 }
 #carBox .carTitle .col1 {
   width: 110px;
@@ -273,9 +277,36 @@
   float: left;
 }
 #carBox .carInner {
-  background-color: #ffffff;
+  background: #fff;
   margin-top: 10px;
   width: 100%;
+}
+#carBox .carInner .type {
+  padding-left: 10px;
+  font-size: 14px;
+  color: #333;
+  padding: 20px 50px;
+  border-bottom: 1px solid #dedede;
+}
+#carBox .carInner .type input {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #ccc;
+  margin-right: 40px;
+}
+#carBox .carInner .type .entity {
+  background: #53acff;
+}
+#carBox .carInner .type .icon {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  margin: 0 5px 0 0;
+  border-radius: 3px;
+  color: #ffffff;
+  display: inline-block;
 }
 
 /* 底部 */

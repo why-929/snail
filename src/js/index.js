@@ -105,6 +105,120 @@
     }, 3500);
 }(jQuery)
 
+//人气单品部分的渲染
+!function ($) {
+    const $rqdp = $('.module-rqdp-left');
+    $.ajax({
+        url: 'http://127.0.0.1/snail/php/data.php',
+        dataType: 'json'
+    }).done(function (data) {
+        let $strhtml = '<ul>';
+        $.each(data, function (index, value) {
+            if(index<4){
+                $strhtml += `
+                <a href="javascript:;" class="module-rqdp-product">
+                    <img class="lazy" data-original="${value.url}" width="200" height="200"/>
+                    <div class="module-rqdp-product-name">${value.title}</div>
+                    <div class="module-rqdp-product-price">￥${value.price}元</div>
+                </a>
+                `;
+            }
+        });
+        $strhtml += '</ul>';
+        $rqdp.html($strhtml);
+
+        //添加懒加载
+        $(function () {
+            $("img.lazy").lazyload({ effect: "fadeIn" });
+        });
+    });
+}(jQuery);
+
+//游戏道具部分渲染
+!function ($) {
+    const $yxdj = $('.module-yxdj-render');
+    $.ajax({
+        url: 'http://127.0.0.1/snail/php/data.php',
+        dataType: 'json'
+    }).done(function (data) {
+        let $strhtml = '<ul>';
+        $.each(data, function (index, value) {
+            if(3< index && index<7){
+                $strhtml += `
+                <a href="javascript:;" class="module-yxdj-product">
+                    <div class="module-yxdj-product-name">${value.title}</div>
+                    <div class="module-yxdj-product-price">${value.price}元</div>
+                    <img class="lazy" data-original="${value.url}" width="200" height="200"/>
+                </a>`
+            }
+        });
+        $strhtml += '</ul>';
+        $yxdj.html($strhtml);
+        
+        //添加懒加载
+        $(function () {
+            $("img.lazy").lazyload({ effect: "fadeIn" });
+        });
+    });
+}(jQuery);
+
+//蜗牛手机卡部分渲染
+!function ($) {
+    const $SIMcard = $('.module-SIMcard-render');
+    $.ajax({
+        url: 'http://127.0.0.1/snail/php/data.php',
+        dataType: 'json'
+    }).done(function (data) {
+        let $strhtml = '<ul>';
+        $.each(data, function (index, value) {
+            if(11< index && index<16){
+                $strhtml += `
+                <a href="javascript:;" class="module-SIMcard-product">
+                <div class="module-SIMcard-render-title">${value.title}</div>
+                <div class="module-SIMcard-render-describe">${value.describe}</div>
+                <div class="module-SIMcard-render-price">${value.price}元</div>
+                <img class="lazy" data-original="${value.url}" width="200" height="200"/>
+            </a>`
+            }
+        });
+        $strhtml += '</ul>';
+        $SIMcard.html($strhtml);
+        
+        //添加懒加载
+        $(function () {
+            $("img.lazy").lazyload({ effect: "fadeIn" });
+        });
+    });
+}(jQuery);
+//蜗牛国际手机卡部分渲染
+!function ($) {
+    const $INTcard = $('.module-INTcard-render');
+    $.ajax({
+        url: 'http://127.0.0.1/snail/php/data.php',
+        dataType: 'json'
+    }).done(function (data) {
+        let $strhtml = '<ul>';
+        $.each(data, function (index, value) {
+            if(15< index && index<20){
+                $strhtml += `
+                <a href="javascript:;" class="module-INTcard-product">
+                <div class="module-INTcard-render-title">${value.title}</div>
+                <div class="module-INTcard-render-describe">${value.describe}</div>
+                <div class="module-INTcard-render-price">${value.price}元</div>
+                <img  class="lazy" data-original="${value.url}" width="200" height="200"/>
+            </a>`
+            }
+        });
+        $strhtml += '</ul>';
+        $INTcard.html($strhtml);
+        
+        //添加懒加载
+        $(function () {
+            $("img.lazy").lazyload({ effect: "fadeIn" });
+        });
+    });
+}(jQuery);
+
 // 回到顶部
 !function($){
     $('.sideBar-top').on('click',function(){

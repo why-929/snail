@@ -5,6 +5,7 @@
 <title>列表页</title>
 </head>
 <link rel="stylesheet" href="css/list.css">
+<link rel="stylesheet" href="css/pagination.css">
 <body>
     <!-- header头部 -->
     <div id="header">
@@ -76,9 +77,22 @@
         <img src="http://att1.niucdn.com/shopmall.snail.com/2016/0504/3df26b34dd481c9de68a7027c8e30eb0ee85cae0.jpeg" alt="">
     </div>
     <!-- 详情页渲染区域 -->
-    <div id="cardWrapper">
-
+    <div id="cardBox">
+        <!-- <div class="cardInner">
+            <a href="javascript:;">
+                <h4 class="cardWrapper-title">印度免卡【八日流量卡】</h4>
+                <p class="descript">8日3GB高速流量</p>
+                <p class="price">￥70</p>
+                <img src="//att1.woniu.com/mall.snail.com/shop/2019/1031/422a7a0d64c14907c301fd0c9363d1d9.jpg"/>
+            </a>
+        </div> -->
     </div>
+    <!-- 分页 -->
+    <div id="pagelist">
+        <div class="m-style page">
+        </div>
+    </div>
+
     <!-- 底部 -->
     <div id="footer">
         <div class="footerMain">
@@ -209,4 +223,8 @@
         </div>
     </div>
 </body>
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.12.4/jquery.js"></script>
+<script src="./js/jquery.lazyload.js"></script>
+<script src="./js/jquery.pagination.js"></script>
+<script src="./js/list.js"></script>
 </html>
