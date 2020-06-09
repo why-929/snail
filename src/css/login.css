@@ -91,6 +91,7 @@ html {
 }
 #login .login-right .close {
   background: url(https://passport.baidu.com/passApi/img/pass_login_icons.png) -72px -49px;
+  text-indent: -999em;
   width: 15px;
   height: 15px;
   position: absolute;

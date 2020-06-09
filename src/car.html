@@ -37,19 +37,19 @@
         </div>
 
     </div>
-        <!-- 侧边栏工具条 -->
-        <div id="sideBar">
-            <!-- 论坛 -->
-            <div class="sideBar-forum"></div>
-            <!-- 客服 -->
-            <div class="sideBar-service"></div>
-            <!-- 分享 -->
-            <div class="sideBar-share"></div>
-            <!-- 意见反馈 -->
-            <div class="sideBar-idea"></div>
-            <!-- 返回顶部 -->
-            <div class="sideBar-top"></div>
-        </div>
+    <!-- 侧边栏工具条 -->
+    <div id="sideBar">
+        <!-- 论坛 -->
+        <div class="sideBar-forum"></div>
+        <!-- 客服 -->
+        <div class="sideBar-service"></div>
+        <!-- 分享 -->
+        <div class="sideBar-share"></div>
+        <!-- 意见反馈 -->
+        <div class="sideBar-idea"></div>
+        <!-- 返回顶部 -->
+        <div class="sideBar-top"></div>
+    </div>
     <!-- 我的购物车 -->
     <div id="car-top">
         <div class="car-top-inner">
@@ -59,8 +59,10 @@
             我的购物车
         </div>
     </div>
+    <!-- 购物车 -->
     <div id="carBox">
-        <div class="carTitle">
+        <!-- 购物车头 -->
+        <div class="carTitle1">
             <div class="col1">&nbsp;</div>
             <div class="col2">商品信息</div>
             <div class="col3">单价（元）</div>
@@ -68,13 +70,41 @@
             <div class="col5">金额（元）</div>
             <div class="col6">操作</div>
         </div>
-        <div class="carInner">
+        <div class="carInner2">
             <div>
                 <div class="type">
                     <input type="checkbox">
                     <span class="entity icon">实</span>
                     类型：实物商品
                 </div>
+            </div>
+        </div>
+        <!-- 购物车添加的内容 -->
+        <div class="carProduct">
+
+        </div>
+        <!-- 结算、删除、总计部分 -->
+        <div class="carBox-footer">
+            <div class="carBox-footer-left">
+                <a href="javascript:;" class="deleteMore">批量删除</a>
+            </div>
+            <div class="carBox-footer-right">
+                <!-- 结算按钮 -->
+                <a href="javascript:;" class="finalBtn">结算</a>
+                <!-- 合计 -->
+                <span class="total">
+                    合计：
+                    <span class="totalPrice">
+                        ￥
+                        <span class="totalNum">0.00</span>
+                    </span>
+                </span>
+                <!-- 已选商品 -->
+                <span class="selectNum">
+                    已选商品
+                    <span>0</span>
+                    件
+                </span>
             </div>
         </div>
     </div>

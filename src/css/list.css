@@ -291,6 +291,12 @@ html, body {
   left: 1px;
   bottom: 1px;
 }
+#cardBox .cardInner a img:hover {
+  width: 296px;
+  height: 296px;
+  transition-timing-function: linear;
+  transition-duration: 0.5s;
+}
 #cardBox .cardInner a .descript {
   color: #999;
   font-size: 14px;

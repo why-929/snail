@@ -292,7 +292,14 @@ $fontSize:14px;
                 height: 286px;
                 position: absolute;
                 left: 1px;
-                bottom: 1px;  
+                bottom: 1px;
+                &:hover{
+                    //图片动画效果
+                    width:296px;
+                    height: 296px;
+                    transition-timing-function:linear;
+                    transition-duration:0.5s
+                }  
             }
             .descript{
                 color: #999;

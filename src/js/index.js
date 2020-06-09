@@ -28,6 +28,7 @@
     });
     //鼠标移出一级菜单二级菜单隐藏
     $menuLi.on('mouseout',function(){
+        // $menuLi.eq($(this).index()).removeClass('munuActive');
         $secondMenu.hide();
     });
     //二级菜单的移入移出
@@ -224,6 +225,6 @@
     $('.sideBar-top').on('click',function(){
         $('html,body').animate({
             scrollTop:0
-        },200);
+        },800);
     })
 }(jQuery)

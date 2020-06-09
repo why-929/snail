@@ -73,23 +73,43 @@
     </div>
     <!-- 商品详情区域 -->
     <div id="details">
-        <div class="part-left">  
+        <!-- 放大镜小图 -->
+        <div class="part-left">
+            <div class="smallBox">
+                <img src="" alt="" class="smallpic">
+                <!-- 遮罩 -->
+                <div class="shade"></div>
+            </div>
+            <!-- 小图列表区域 -->
+            <div class="smallList">
+                <a href="javascript:;" class="left"> &lt; </a>
+                <div class="smallImglist">
+                    <ul>
+
+                    </ul>
+                </div>
+                <a href="javascript:;" class="right"> &gt; </a>
+            </div>
+        </div>
+        <div class="bigBox">
+            <!-- 放大镜大图 -->
+            <img src="" alt="" class="bigpic">
         </div>
         <div class="part-right">
             <!-- 商品标题 -->
             <div class="part-right-titleBar">
-                <h4 class="title">XXXX【八日流量卡】</h4>
-                <p class="subtitle">XXXXXX</p>
+                <h4 class="title"></h4>
+                <p class="subtitle"></p>
             </div>
             <!-- 商品价格 -->
             <div class="bar">
                 <div class="label">价&nbsp;&nbsp;&nbsp;&nbsp;格：</div>
-                <div class="price"><span>￥</span> 70</div>
+                <div class="price"><span></span></div>
             </div>
             <!-- 商品信息 -->
             <div class="bar">
-                <div class="label">商品信息：</div>
-                <div class="info">XXXXXX</div>
+                <div class="label">商品信息</div>
+                <div class="info"></div>
             </div>
             <!-- 运费 -->
             <div class="bar">
@@ -107,14 +127,14 @@
                     <div class="label">数量：</div>
                     <div class="numBox">
                         <span class="btn lessBtn"></span>
-                        <input type="text" value="1">
+                        <input type="text" value="1" id="count">
                         <span class="btn moreBtn"></span>
                     </div>
                 </div>
             </div>
             <!-- 加购物车/购买 -->
             <div class="buy">
-                <a href="#" class="buyBtn">立即购买</a>
+                <a href="javasript:;" class="buyBtn">立即购买</a>
                 <a href="#" class="carBtn">加入购物车</a>
             </div>
         </div>    
@@ -248,5 +268,26 @@
                 </div>
         </div>
     </div>
+
+    <!-- 加入购物车全屏遮罩 -->
+    <div id="mask"></div>
+    <!-- 加入购物车弹出框 -->
+    <div id="addcarBox">
+        <div class="addcarBox-header">
+            温馨提示：
+            <a href="javascript:;" class="close">X</a>
+        </div>
+        <div class="addcarBox-main">
+            <span class="success"></span>添加成功！
+            <div class="addcarBox-btn">
+                <a href="" class="addcarBox-continue">继续购物</a>
+                <a href="./car.html
+                " class="addcarBox-settle">去购物车结算</a>
+            </div>
+        </div>
+    </div>
 </body>
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.12.4/jquery.js"></script>
+<script src="./js/jquery.cookie.js"></script>
+<script src="./js/detail.js"></script>
 </html>

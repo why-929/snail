@@ -238,7 +238,7 @@ body {
   margin: 0 auto 50px;
   overflow: hidden;
 }
-#carBox .carTitle {
+#carBox .carTitle1 {
   width: 100%;
   height: 50px;
   line-height: 50px;
@@ -248,57 +248,57 @@ body {
   background: #ffffff;
   padding: 10px 0;
 }
-#carBox .carTitle .col1 {
+#carBox .carTitle1 .col1 {
   width: 110px;
   float: left;
 }
-#carBox .carTitle .col2 {
+#carBox .carTitle1 .col2 {
   width: 480px;
   float: left;
 }
-#carBox .carTitle .col3 {
+#carBox .carTitle1 .col3 {
   width: 100px;
   text-align: center;
   float: left;
 }
-#carBox .carTitle .col4 {
+#carBox .carTitle1 .col4 {
   width: 190px;
   text-align: center;
   float: left;
 }
-#carBox .carTitle .col5 {
+#carBox .carTitle1 .col5 {
   width: 110px;
   text-align: center;
   float: left;
 }
-#carBox .carTitle .col6 {
+#carBox .carTitle1 .col6 {
   width: 160px;
   text-align: center;
   float: left;
 }
-#carBox .carInner {
+#carBox .carInner2 {
   background: #fff;
   margin-top: 10px;
   width: 100%;
 }
-#carBox .carInner .type {
+#carBox .carInner2 .type {
   padding-left: 10px;
   font-size: 14px;
   color: #333;
   padding: 20px 50px;
   border-bottom: 1px solid #dedede;
 }
-#carBox .carInner .type input {
+#carBox .carInner2 .type input {
   display: inline-block;
   width: 18px;
   height: 18px;
   border: 1px solid #ccc;
   margin-right: 40px;
 }
-#carBox .carInner .type .entity {
+#carBox .carInner2 .type .entity {
   background: #53acff;
 }
-#carBox .carInner .type .icon {
+#carBox .carInner2 .type .icon {
   width: 20px;
   height: 20px;
   text-align: center;
@@ -307,6 +307,65 @@ body {
   border-radius: 3px;
   color: #ffffff;
   display: inline-block;
+}
+#carBox .carProduct {
+  width: 100%;
+  height: 50px;
+  background: lightsalmon;
+}
+#carBox .carBox-footer .carBox-footer-left {
+  float: left;
+  background: lightskyblue;
+  padding: 20px 60px;
+}
+#carBox .carBox-footer .carBox-footer-left .deleteMore {
+  font-size: 14px;
+  color: #666666;
+  line-height: 50px;
+}
+#carBox .carBox-footer .carBox-footer-right {
+  float: right;
+  background: lightpink;
+  padding: 20px 60px 20px 0;
+}
+#carBox .carBox-footer .carBox-footer-right .finalBtn {
+  width: 180px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  text-align: center;
+  float: right;
+  background: #e5e5e5;
+  color: #9c9c9c;
+  text-decoration: none;
+  color: #ffffff;
+}
+#carBox .carBox-footer .carBox-footer-right .total {
+  padding: 0 10px;
+  float: right;
+  line-height: 50px;
+}
+#carBox .carBox-footer .carBox-footer-right .total .totalPrice {
+  color: #ff9500;
+  font-weight: bold;
+  font-size: 24px;
+  vertical-align: middle;
+}
+#carBox .carBox-footer .carBox-footer-right .total .totalPrice span {
+  color: #ff9500;
+  font-weight: bold;
+  font-size: 24px;
+}
+#carBox .carBox-footer .carBox-footer-right .selectNum {
+  float: right;
+  padding: 0 20px;
+  line-height: 50px;
+}
+#carBox .carBox-footer .carBox-footer-right .selectNum span {
+  font-size: 14px;
+  color: #ff7f00;
+  vertical-align: middle;
+  margin: 0 2px;
 }
 
 /* 底部 */
