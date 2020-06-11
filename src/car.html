@@ -73,7 +73,7 @@
         <div class="carInner2">
             <div>
                 <div class="type">
-                    <input type="checkbox">
+                    <input type="checkbox" checked="">
                     <span class="entity icon">实</span>
                     类型：实物商品
                 </div>
@@ -81,7 +81,33 @@
         </div>
         <!-- 购物车添加的内容 -->
         <div class="carProduct">
-
+            <div class="carProducts" style="display: none;">
+                <div class="col1">
+                    <input href="javascript:;" class="checkbox" type="checkbox" checked="">
+                </div>
+                <div class="col2">
+                    <a href="javascript:;" class="pic">
+                        <img src="http://attachments.snail.com/snail-app/goods/20190724132534627.jpg" alt="新马泰免卡【十日流量卡】">
+                    </a>
+                    <p class="info">新马泰免卡【十日流量卡】</p>
+                </div>
+                <div class="col3">
+                    <p class="oneprice">55.00</p>
+                </div>
+                <div class="col4">
+                    <div class="numberBox">
+                        <a href="javascript:;" class="minus">-</a>
+                        <input type="text" value="1" class="number">
+                        <a href="javascript:;" class="add">+</a>
+                    </div>
+                </div>
+                <div class="col5">
+                    <p class="oneprices">165.00</p>
+                </div>
+                <div class="col6">
+                    <a href="javascript:;" class="delete">删除</a>
+                </div>
+            </div>
         </div>
         <!-- 结算、删除、总计部分 -->
         <div class="carBox-footer">
@@ -95,14 +121,13 @@
                 <span class="total">
                     合计：
                     <span class="totalPrice">
-                        ￥
                         <span class="totalNum">0.00</span>
                     </span>
                 </span>
                 <!-- 已选商品 -->
-                <span class="selectNum">
+                <span class="select">
                     已选商品
-                    <span>0</span>
+                    <span class="selectNum">0</span>
                     件
                 </span>
             </div>
@@ -238,4 +263,7 @@
         </div>
     </div>
 </body>
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.12.4/jquery.js"></script>
+<script src="./js/jquery.cookie.js"></script>
+<script src="./js/car.js"></script>
 </html>

@@ -108,7 +108,7 @@ $fontSize:14px;
                 color: #fff;
             }
         }
-        .cart{
+        .car{
             position: relative;
             float: right;
             & i{
@@ -158,8 +158,41 @@ $fontSize:14px;
         top: 320px;
         background: url(../img/sidebar.png) -55px -152px no-repeat;
         z-index: 999;
-        &:hover{
-            background-position: -55px -228px;
+        .sideBar-forum-way{
+            width: 314px;
+            height: 101px;
+            border: 1px solid #ff9500;
+            background: #fff;
+            position: absolute;
+            top: 0;
+            left: -316px;
+            padding: 16px 0 15px;
+            .forum-mobile{
+                height: 101px;
+                float: left;
+                color: #666;
+                text-align: center;
+                font-size: 14px;
+                width: 156px;
+                border-right: 1px dashed #dedede;
+                .mobile-icon{
+                    width: 32px;
+                    height: 32px;
+                    display: block;
+                    margin: 18px auto 20px;
+                    background: url(../img/sidebar.png) -68px -808px  no-repeat;
+                    &:hover{
+                        background-position: -68px -841px;
+                    }
+                }
+                .game-icon{
+                    @extend .mobile-icon;
+                    background: url(../img/sidebar.png) -68px -874px  no-repeat;
+                    &:hover{
+                        background-position: -68px -907px;
+                    }
+                }
+            }
         }
     }
     .sideBar-service{
@@ -184,8 +217,14 @@ $fontSize:14px;
         top: 470px;
         background: url(../img/sidebar.png) 0 -947px no-repeat;
         z-index: 999;
-        &:hover{
-            background-position: -55px -947px;
+        .sideBar-share-way{
+            cursor: pointer;
+            height: 330px;
+            width: 230px;
+            border: 1px solid #ff9500;
+            position: absolute;
+            right: 45px;
+            background: #fff;
         }
     }
     .sideBar-idea{

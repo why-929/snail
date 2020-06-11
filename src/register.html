@@ -18,26 +18,30 @@
             <h3>蜗牛通行证，适用于蜗牛旗下所有游戏！</h3>
             <div class="loginBox">
                 <span>蜗牛通行证注册</span>
-                <p>已注册 , <a href="">登录</a></p>
+                <p>已注册 , <a href="./login.html">登录</a></p>
             </div>
         </div>
         <!-- 表单部分 -->
-        <form action="" id="registerBox">
+        <form action="http://127.0.0.1/snail/php/register.php" id="registerBox" method="post">
             <div class="row">
-                <label for="" class="label">创建账号：</label>
-                <input type="text" class="input" placeholder="6-25位字母数字或下划线组成">
+                <label for="" class="label">用户姓名：</label>
+                <input type="text" class="input username" placeholder="6-25位字母数字或下划线组成" name="username">
+                <span></span>
             </div>
             <div class="row">
                 <label for="" class="label">设置密码：</label>
-                <input type="password" class="input" placeholder="6-20个字符组成">
+                <input type="password" class="input password" placeholder="6-20个字符组成" name="password">
+                <span></span>
             </div>
             <div class="row">
                 <label for="" class="label">确认密码：</label>
-                <input type="password" class="input" placeholder="确认密码">
+                <input type="password" class="input repass " placeholder="确认密码" name="repass">
+                <span></span>
             </div>
             <div class="row">
                 <label for="" class="label">手机号码：</label>
-                <input type="text" class="input" placeholder="可享受官方增值服务">
+                <input type="text" class="input tel" placeholder="可享受官方增值服务" name="tel">
+                <span></span>
             </div>
             <div class="row agree">
                 <label for="">
@@ -46,7 +50,7 @@
                 </label>
             </div>
             <div class="lastrow send">
-                <input type="submit" value="注  册">
+                <input type="submit" value="注  册" name="submit">
             </div>
         </form>
     </div>
@@ -181,4 +185,6 @@
     </div>
 
 </body>
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.12.4/jquery.js"></script>
+<script src="./js/register.js"></script>
 </html>

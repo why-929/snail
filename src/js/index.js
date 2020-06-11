@@ -1,21 +1,21 @@
-/* top-nav部分 */
+ /* top-nav部分 */
 //鼠标放下出现下拉菜单
-!function($) {
-    const $showli=$('.showNav .dropBox');
-    const $hideNav = $('.hideNav');
-    $showli.hover(function() {
-        $hideNav.stop(true).animate({
-            top: 0
-        })
-    },function(){
-        $hideNav.stop(true).animate({
-            top: -190
-        })
-    });
-}(jQuery);
+// !function($) {
+//     const $showli=$('.showNav .dropBox');
+//     const $hideNav = $('.hideNav');
+//     $showli.hover(function() {
+//         $hideNav.stop(true).animate({
+//             top: 0
+//         })
+//     },function(){
+//         $hideNav.stop(true).animate({
+//             top: -190
+//         })
+//     });
+// }(jQuery);
 
-//轮播图 - 二级菜单
 !function($){
+    //一、轮播图 - 二级菜单
     const $menuUl = $('.banner-menu');//一级菜单ul
     const $menuLi = $('.banner-menu li');//一级菜单li
     const $secondMenu = $('.second-menu');//二级菜单
@@ -38,10 +38,8 @@
     $secondMenu.on('mouseout',function(){
         $(this).hide();
     });
-}(jQuery)
 
-//轮播图
-!function(){
+    //二、轮播图
     const $banner = $('.banner');//轮播图盒子
     const $bannerUl = $('.banner ul');
     const $Imgli = $('.banner ul li');//五张图片
@@ -56,7 +54,6 @@
     $bannerUl.append($cloneImg).css({//追加并设置图片盒子的宽度
         width: $bannerUl.children().length * $Imgwidth
     });
-
     //封装运动过程
     function bannerSwitch(){
         $index ++;
@@ -85,13 +82,11 @@
             left: -$Imgwidth * $index
         }); 
     }
-
     //2.点击圆圈按钮，图片位置发生变化
     $circleBtn.on('click',function(){
         $index = $(this).index() - 1;//-1抵消bannerSwitch()中的index++
         bannerSwitch()
     })
-
     //3.箭头添加点击事件
     $rightBtn.on('click',function(){
         bannerSwitch();
@@ -100,14 +95,11 @@
         $index -=2;//bannerSwitch()中index+1,本身应该-1,所以-2
         bannerSwitch();
     })
-
     $timer = setInterval(() => {
         bannerSwitch();
     }, 3500);
-}(jQuery)
 
-//人气单品部分的渲染
-!function ($) {
+    //三、人气单品部分的渲染
     const $rqdp = $('.module-rqdp-left');
     $.ajax({
         url: 'http://127.0.0.1/snail/php/data.php',
@@ -127,16 +119,13 @@
         });
         $strhtml += '</ul>';
         $rqdp.html($strhtml);
-
         //添加懒加载
         $(function () {
             $("img.lazy").lazyload({ effect: "fadeIn" });
         });
     });
-}(jQuery);
 
-//游戏道具部分渲染
-!function ($) {
+    //四、游戏道具部分渲染
     const $yxdj = $('.module-yxdj-render');
     $.ajax({
         url: 'http://127.0.0.1/snail/php/data.php',
@@ -155,16 +144,13 @@
         });
         $strhtml += '</ul>';
         $yxdj.html($strhtml);
-        
         //添加懒加载
         $(function () {
             $("img.lazy").lazyload({ effect: "fadeIn" });
         });
     });
-}(jQuery);
 
-//蜗牛手机卡部分渲染
-!function ($) {
+    //五、蜗牛手机卡部分渲染
     const $SIMcard = $('.module-SIMcard-render');
     $.ajax({
         url: 'http://127.0.0.1/snail/php/data.php',
@@ -184,15 +170,13 @@
         });
         $strhtml += '</ul>';
         $SIMcard.html($strhtml);
-        
         //添加懒加载
         $(function () {
             $("img.lazy").lazyload({ effect: "fadeIn" });
         });
     });
-}(jQuery);
-//蜗牛国际手机卡部分渲染
-!function ($) {
+
+    //六、蜗牛国际手机卡部分渲染
     const $INTcard = $('.module-INTcard-render');
     $.ajax({
         url: 'http://127.0.0.1/snail/php/data.php',
@@ -212,19 +196,91 @@
         });
         $strhtml += '</ul>';
         $INTcard.html($strhtml);
-        
         //添加懒加载
         $(function () {
             $("img.lazy").lazyload({ effect: "fadeIn" });
         });
     });
-}(jQuery);
 
-// 回到顶部
-!function($){
+    //七、应用部分
+    $w = $('.module-use-product-container img').width();
+    $h = $('.module-use-product-container img').height();
+    $w2 = $w + 10;
+    $h2 = $h + 10;
+    $('.module-use-product-container img').hover(function(){
+        $(this).stop().animate({
+            height:$h2,
+            width:$w2,
+        },300);
+    },function(){
+        $(this).stop().animate({
+            height:$h,
+            width:$w,
+        },300);
+    })
+
+    //八、分享方式
+    $('.sideBar-share').hover(function(){
+        $('.sideBar-share').css({
+            backgroundPosition: '-55px -947px'
+        })
+        $('.sideBar-share-way').css({
+            display: 'block'
+        })
+    },function(){
+        $('.sideBar-share').css({
+            backgroundPosition: '0 -947px'
+        })
+        $('.sideBar-share-way').css({
+            display: 'none'
+        })
+    })
+    //论坛方式
+    $('.sideBar-forum').hover(function(){
+        $('.sideBar-forum').css({
+            backgroundPosition: '-55px -228px'
+        })
+        $('.sideBar-forum-way').css({
+            display: 'block'
+        })
+    },function(){
+        $('.sideBar-forum').css({
+            backgroundPosition: '-55px -152px'
+        })
+        $('.sideBar-forum-way').css({
+            display: 'none'
+        })
+    })
+
+    //九、回到顶部
     $('.sideBar-top').on('click',function(){
         $('html,body').animate({
             scrollTop:0
         },800);
     })
+
+    //十、显示登陆名
+    const $admin = $('.one')
+    const $logout = $('.two')
+    if(localStorage.getItem('username')){//当有本地存储的时候，登陆变为用户名；注册变为注销
+        let $user = localStorage.getItem('username');
+        $admin.html($user);
+        $logout.html('注销')
+    }
+    $logout.on('click',function(e){
+        e.preventDefault()//阻止a标签的跳转
+        if($logout.html('注销')){//当内容为注销时，刷新页面，删除本地存储
+            window.location.reload();
+            localStorage.removeItem('username') 
+        }
+    })
+    
+    //没登录时，购物车无法点击
+    // $('.car').on('click',function(e){
+    //     const $admin = $('.one')
+    //     const $carBtn = $('.car a')
+    //     if($admin.html('登陆') ){
+    //         e.preventDefault()
+    //     }
+    // })
 }(jQuery)

@@ -11,7 +11,7 @@
         url: 'http://127.0.0.1/snail/php/listdata.php',
         dataType: 'json'
     }).done(function (data) {
-        console.log(data);
+        // console.log(data);
         let $strhtml ="";
         $.each(data, function (index, value) {
             $strhtml += `
@@ -148,4 +148,20 @@
             scrollTop:0
         },200);
     })
+
+    
+//显示登陆名
+const $admin = $('.one')
+const $logout = $('.two')
+if(localStorage.getItem('username')){
+    let $user = localStorage.getItem('username');
+    $admin.html($user);
+    $logout.html('注销')
+}
+$logout.on('click',function(){
+    if($logout.html('注销')){
+        window.location.reload();
+        localStorage.removeItem('username') 
+    }
+})
 }(jQuery)

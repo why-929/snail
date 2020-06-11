@@ -139,16 +139,16 @@
     $('.carBtn').on('click',function(){
         let $id = $(this).parents('#details').find('.smallpic').attr('id');
         cookietoarray();
-        console.log($id);
+        // console.log($id);
         //$.inArray(value,array,[fromIndex])
         //确定第一个参数在数组中的位置，从0开始计数(如果没有找到则返回 -1)
         if($.inArray($id, arrid) != -1){
-            let $num = parseInt(arrnum[$.inArray($id, arrid)]) + parseInt($('#count').val()); //取值
+            let $num = parseInt(arrnum[$.inArray($id,arrid)]) + parseInt($('#count').val()); //取值
             arrnum[$.inArray($id, arrid)] = $num; //赋值
             $.cookie('cookienum', arrnum, { expires: 10, path: '/' });
         }else{
-            arrid.push($id); //将编号$sid push到arrsid数组中
-            $.cookie('cookieid', arrid, { expires: 10, path: '/' });
+            arrid.push($id); //将编号$id push到arrid数组中
+            $.cookie('cookieid',arrid,{expires: 10, path: '/'});
             arrnum.push($('#count').val()); //将数量push到arrnum数组中
             $.cookie('cookienum', arrnum, { expires: 10, path: '/' });
         }
@@ -169,8 +169,31 @@
             visibility: 'hidden',
         })
     })
-
-
 }(jQuery);
+
+// 回到顶部
+!function($){
+    $('.sideBar-top').on('click',function(){
+        $('html,body').animate({
+            scrollTop:0
+        },800);
+    })
+
+    
+//显示登陆名
+const $admin = $('.one')
+const $logout = $('.two')
+if(localStorage.getItem('username')){
+    let $user = localStorage.getItem('username');
+    $admin.html($user);
+    $logout.html('注销')
+}
+$logout.on('click',function(){
+    if($logout.html('注销')){
+        window.location.reload();
+        localStorage.removeItem('username') 
+    }
+})
+}(jQuery)
 
 
