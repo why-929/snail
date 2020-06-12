@@ -20,5 +20,5 @@ if (isset($_POST['submit'])) {
     $repass = sha1($_POST['repass']);
     $tel = $_POST['tel'];
     $conn->query("insert register values(null,'$username','$password','$repass','$tel')");
-    header('location:http://127.0.0.1/snail/src/login.html');
+    header('location:http://10.31.162.31/snail/src/login.html');
 }

@@ -15,7 +15,7 @@
 
     //2.将id传给后端
     $.ajax({
-        url: 'http://127.0.0.1/snail/php/getid.php',
+        url: 'http://10.31.162.31/snail/php/getid.php',
         data: {
             id: $id
         },

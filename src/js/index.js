@@ -102,7 +102,7 @@
     //三、人气单品部分的渲染
     const $rqdp = $('.module-rqdp-left');
     $.ajax({
-        url: 'http://127.0.0.1/snail/php/data.php',
+        url: 'http://10.31.162.31/snail/php/data.php',
         dataType: 'json'
     }).done(function (data) {
         let $strhtml = '<ul>';
@@ -128,7 +128,7 @@
     //四、游戏道具部分渲染
     const $yxdj = $('.module-yxdj-render');
     $.ajax({
-        url: 'http://127.0.0.1/snail/php/data.php',
+        url: 'http://10.31.162.31/snail/php/data.php',
         dataType: 'json'
     }).done(function (data) {
         let $strhtml = '<ul>';
@@ -153,7 +153,7 @@
     //五、蜗牛手机卡部分渲染
     const $SIMcard = $('.module-SIMcard-render');
     $.ajax({
-        url: 'http://127.0.0.1/snail/php/data.php',
+        url: 'http://10.31.162.31/snail/php/data.php',
         dataType: 'json'
     }).done(function (data) {
         let $strhtml = '<ul>';
@@ -179,7 +179,7 @@
     //六、蜗牛国际手机卡部分渲染
     const $INTcard = $('.module-INTcard-render');
     $.ajax({
-        url: 'http://127.0.0.1/snail/php/data.php',
+        url: 'http://10.31.162.31/snail/php/data.php',
         dataType: 'json'
     }).done(function (data) {
         let $strhtml = '<ul>';

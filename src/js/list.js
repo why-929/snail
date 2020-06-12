@@ -8,7 +8,7 @@
     //列表页渲染
     const $cardBox = $('#cardBox');
     $.ajax({
-        url: 'http://127.0.0.1/snail/php/listdata.php',
+        url: 'http://10.31.162.31/snail/php/listdata.php',
         dataType: 'json'
     }).done(function (data) {
         // console.log(data);
@@ -54,7 +54,7 @@
         callback: function (api) {
             console.log(api.getCurrent());//获取的页码给后端
             $.ajax({
-                url: 'http://127.0.0.1/snail/php/listdata.php',
+                url: 'http://10.31.162.31/snail/php/listdata.php',
                 data: {
                     page: api.getCurrent()
                 },

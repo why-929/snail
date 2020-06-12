@@ -1,7 +1,7 @@
 !function($){
     function showlist(id,num){
         $.ajax({
-            url: 'http://127.0.0.1/snail/php/data.php',
+            url: 'http://10.31.162.31/snail/php/data.php',
             dataType: 'json'
         }).done(function(data){
             $.each(data,function(index,value){
@@ -155,13 +155,6 @@
     });
 
 }(jQuery)
-
-
-
-
-
-
-
 
 
 // 回到顶部

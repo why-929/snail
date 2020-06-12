@@ -31,7 +31,7 @@
                 }
                 $.ajax({
                     type: 'post',
-                    url: 'http://127.0.0.1/snail/php/register.php',
+                    url: 'http://10.31.162.31/snail/php/register.php',
                     data: {
                         username: $username.val()//将用户名传给后端
                     }
